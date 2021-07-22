@@ -1,2 +1,33 @@
 @import "../../global.scss";
 
+.container {
+    @extend %font-header;
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+        .navbar__left {
+            position: relative;
+            &::before {
+                content: url(../../assets/svg/iconMail.svg);
+                position: absolute;
+                top: -10%;
+                right: 103%;
+            }
+        }
+        .navbar__right {
+            .navbar__right-item {
+                margin: 20px;
+                padding-bottom: 3px;
+                &:hover {
+                    border-bottom: 1px solid $green;
+                    transition: 2s linear;
+                }
+            }
+        }
+    }
+}
