@@ -1,0 +1,42 @@
+@import "../../global.scss";
+
+.intro {
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    .intro__left {
+        width: 750px;
+        .intro__h2 {
+            color: $grayFirst;
+            @extend %font-works-p;
+        }
+        .intro__h1 {
+            color: $white;
+            @extend %font-h1;
+            margin: 10px 0px 26px 0px;
+            height: 600px;
+        }
+        .intro__p {
+            @extend %font-works-p;
+            color: $grayFirst;
+            margin: 20px 0px 50px; 
+        }
+        .intro__link {
+            @extend %font-works-p;
+            border: 2px solid #68C010;
+            box-sizing: border-box;
+            padding: 15px 25px;
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    .intro__right {
+        img {
+            width: 1339px;
+            height: 967px;
+        }
+    }
+}
+.itype {
+    color: $green;
+}
