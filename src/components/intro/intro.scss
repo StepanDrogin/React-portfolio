@@ -7,14 +7,14 @@
     .intro__left {
         width: 750px;
         .intro__h2 {
-            color: $grayFirst;
+            color: $white;
             @extend %font-works-p;
         }
         .intro__h1 {
             color: $white;
             @extend %font-h1;
-            margin: 10px 0px 26px 0px;
-            height: 600px;
+            margin: 10px 0px 90px 0px;
+            height: 275px;
         }
         .intro__p {
             @extend %font-works-p;
@@ -33,8 +33,10 @@
     }
     .intro__right {
         img {
-            width: 1339px;
-            height: 967px;
+            max-width: 800px;
+            max-height:700px;
+            margin-top: 50px;
+            margin-left: 20px;
         }
     }
 }
