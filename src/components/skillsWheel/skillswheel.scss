@@ -1,0 +1,215 @@
+@import "../../global.scss";
+
+.wheel {
+    position: relative;
+    h3 {
+        @extend %font-skills-h3;
+        color: $graySecond;
+    }
+    .wheel__logo {
+        position: absolute;
+        left: 50vh;
+    }
+    .skillsWheel__h2 {
+        position: absolute;
+        left: 68vh;
+        top: 18vh;
+        @extend %font-h2;
+        color: $white;
+    }
+    .HTML__logo {
+        position: absolute;
+        left: 76vh;
+        top: 1.5vh;
+    }
+    .CSS__logo {
+        position: absolute;
+        left: 84vh;
+        top: 5.5vh;
+    }
+    .Figma__logo {
+        position: absolute;
+        left: 92vh;
+        top: 15vh;
+    }
+    .Jquery__logo {
+        position: absolute;
+        left: 92vh;
+        top: 24vh;
+    }
+    .React__logo {
+        position: absolute;
+        left: 88.5vh;
+        top: 33vh;
+    }
+    .API__logo {
+        position: absolute;
+        left: 81.5vh;
+        top: 39.5vh;
+    }
+    .AXIOS__logo {
+        position: absolute;
+        left: 71.5vh;
+        top: 41.5vh;
+    }
+    .Webpack__logo {
+        position: absolute;
+        left: 61.5vh;
+        top: 38.5vh;
+    }
+    .Vue__logo {
+        position: absolute;
+        left: 55vh;
+        top: 33vh;
+    }
+    .BEM__logo {
+        position: absolute;
+        left: 52.5vh;
+        top: 24vh;
+    }
+    .JavaScript__logo {
+        position: absolute;
+        left: 52vh;
+        top: 14vh;
+    }
+    .GitHub__logo {
+        position: absolute;
+        left: 58.5vh;
+        top: 6.5vh;
+    }
+    .Engish__logo {
+        position: absolute;
+        left: 66.5vh;
+        top: 1.5vh;
+    }
+    .line__html {
+        position: absolute;
+        left: 81vh;
+        top: -10vh;
+    }
+    .line__css {
+        position: absolute;
+        left: 91.5vh;
+        top: -2vh;
+    }
+    .line__figma {
+        position: absolute;
+        left: 99vh;
+        top: 12vh;
+    }
+    .line__jquery {
+        position: absolute;
+        left: 100vh;
+        top: 27.5vh;
+    }
+    .line__react {
+        position: absolute;
+        left: 96vh;
+        top: 39.5vh;
+    }
+    .line__API {
+        position: absolute;
+        left: 87vh;
+        top: 47.5vh;
+    }
+    .line__AXIOS {
+        position: absolute;
+        left: 75vh;
+        top: 50.5vh;
+    }
+    .line__webpack {
+        position: absolute;
+        left: 46vh;
+        top: 47vh;
+    }
+    .line__vue {
+        position: absolute;
+        left: 33vh;
+        top: 39vh;
+    }
+    .line__BEM {
+        position: absolute;
+        left: 33vh;
+        top: 28vh;
+    }
+    .line__javascript {
+        position: absolute;
+        left: 33vh;
+        top: 12vh;
+    }
+    .line__github {
+        position: absolute;
+        left: 42.5vh;
+        top: -2vh;
+    }
+    .line__english {
+        position: absolute;
+        left: 59vh;
+        top: -10vh;
+    }
+    .HTML__h3 {
+        position: absolute;
+        left: 93vh;
+        top: -11.5vh;
+    }
+    .CSS__h3 {
+        position: absolute;
+        left: 109vh;
+        top: -3.5vh;
+    }
+    .Figma__h3 {
+        position: absolute;
+        left: 119vh;
+        top: 10.5vh;
+    }
+    .Jquery__h3 {
+        position: absolute;
+        left: 119vh;
+        top: 27vh;
+    }
+    .React__h3 {
+        position: absolute;
+        left: 119vh;
+        top: 41vh;
+    }
+    .API__h3 {
+        position: absolute;
+        left: 105vh;
+        top: 55vh;
+    }
+    .AXIOS__h3 {
+        position: absolute;
+        left: 72vh;
+        top: 65vh;
+    }
+    .Webpack_h3 {
+        position: absolute;
+        left: 33vh;
+        top: 54.5vh;
+    }
+    .Vue__h3 {
+        position: absolute;
+        left: 4vh;
+        top: 42vh;
+    }
+    .BEM__h3 {
+        position: absolute;
+        left: 26vh;
+        top: 28vh;
+    }
+    .JS__h3 {
+        position: absolute;
+        left: -1vh;
+        top: 10.5vh;
+    }
+    .GitHub__h3 {
+        position: absolute;
+        left: 33vh;
+        top: -3.5vh;
+    }
+    .English__h3 {
+        position: absolute;
+        left: 45vh;
+        top: -11.5vh;
+    }
+}
