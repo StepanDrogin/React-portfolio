@@ -1,0 +1,31 @@
+@import "../../global.scss";
+
+.softskills {
+    margin-top: 107vh;
+    margin-bottom: 220px;
+    .softskills__h2 {
+        text-align: center;
+        @extend %font-h2;
+        color: $white;
+    }
+    .softskills__items {
+        display: flex;
+        justify-content: center;
+        .softskills__item {
+            background-color: $white;
+            padding: 25px 70px 50px 28px;
+            margin: 60px 15px 0px 15px;
+            width: 458px;
+            height: 250px;
+            .softskills__item_p {
+                max-width: 360px;
+                @extend %font-skills-p;
+            }
+            .softskills__item_h3 {
+                margin-top: 24px;
+                margin-bottom: 12px;
+                @extend %font-skills-h3;
+            }
+        }
+    }
+}
