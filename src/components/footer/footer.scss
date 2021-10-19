@@ -1,0 +1,20 @@
+@import "../../global.scss";
+
+.footer__underline {
+    border: 1px solid rgba(67, 71, 82, 1);
+    width: 80%;
+    margin: 0 auto;
+}
+.footer__h4 {
+    text-align: center;
+    margin-top: 25px;
+    @extend %font-skills-p;
+    color: $graySecond;
+}
+.footer__items {
+    display: flex;
+    justify-content: center;
+    .footer__item {
+        margin: 10px;
+    }
+}
