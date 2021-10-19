@@ -24,10 +24,12 @@ export default function MyWorks() {
                 </div>
                 <div className="works__item-5">
                     <p className="works__p">I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.
-I create successful responsive websites that are fast, easy to use, and built with best practices.</p>
-                    <p className="works__p">I create successful </p>
+                    I create successful responsive websites that are fast, easy to use, and built with best practices.</p>
+                    <div className="works__flex">
+                    <p className="works__p">I create successful &#8594;</p>
                     {/* eslint-disable-next-line */}
                     <a href="#" className="works__link">View More</a>
+                    </div>
                 </div>
             </div>
         </div>
