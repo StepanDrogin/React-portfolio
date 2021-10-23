@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 export default function MyWorks() {
     return (
         <div className="container">
-            <p className="works__p">The work i do.</p>
+            <p id='work' className="works__p">The work i do.</p>
             <h2 className="works__h2">My Works</h2>
             <div className="works__grid">
                 <div className="works__item-1">
