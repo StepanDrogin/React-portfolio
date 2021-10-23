@@ -19,13 +19,15 @@ export default function Intro() {
         <div className="intro">
             <div className="intro__left">
                 <h3 className="intro__h2">Hi, my name is Stepan</h3>
-                <h1 className="intro__h1">I am a frontend developer from Russia working in 
+                <h1 className="intro__h1">I am a <span className='intro__h1-thick'> frontend developer </span> from Russia working in 
                 <p className="itype" ref={textRef}></p>
                 </h1>
                 <p className="intro__p">Are you looking for a communications front-end developer who works alone and in a team and above all, passionate about everything JavaScript (including React)? Let me know! I also have experience in design.</p>
                 <p className="intro__p">Now I cannot complete a new task. Want to be the first to know when I'm available again?</p>
+                <div className='middle'>
                 {/* eslint-disable-next-line */}
-                <a href="#" className="intro__link">Contact me &#8594;</a>
+                <a href="#" className="btn btn3">Contact me &#8594;</a>
+                </div>
             </div>
             <div className="intro__right">
                 <img className="intro__right--image" src={notebook} alt={"notebook"}></img>
