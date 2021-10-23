@@ -27,7 +27,7 @@ function App() {
           <Route path="/nails">
             <NailsPage />
           </Route>
-          <Route path="/konstuct">
+          <Route path="/kontuct">
             <Konstuct />
           </Route>
           <Route path="/weather">
