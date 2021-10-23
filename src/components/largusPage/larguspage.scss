@@ -1,1 +1,51 @@
 @import "../../global.scss";
+
+.page__h3 {
+    @extend %font-h4;
+    color: $white;
+    margin-top: 140px;
+    margin-bottom: 30px;
+}
+.pages {
+    display: flex;
+    justify-content: space-between;
+.page__left {
+    .page__p {
+        @extend %font-skills-p;
+        color: $white;
+        margin-bottom: 46px;
+        text-align: left;
+        max-width: 458px;
+    }
+}
+.page__right {
+    .page__image-front {
+        position: absolute;
+        margin-top: 340px;
+        margin-left: 40px;
+    }
+    .page__imane-back {
+        position: relative;
+    }
+}
+}
+.page__icon {
+    padding: 0px 10px 0px 0px;
+    margin-bottom: 550px;
+}
+.page__h2 {
+    @extend %font-h2;
+    color: $white;
+    margin-bottom: 60px;
+}
+.page__cards {
+    display: flex;
+    .page__card {
+        margin: 0px 15px 221px 0px;
+        .card__name {
+            @extend %font-p;
+            color: $white;
+            margin-top: 15px;
+        }
+    }
+}
