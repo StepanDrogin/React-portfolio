@@ -7,7 +7,7 @@ import GitHub from "../../assets/svg/github-icon.svg"
 export default function Footer() {
     return (
         <div className="container">
-        <div className="footer__underline"></div>
+        <div id='footer' className="footer__underline"></div>
         <h4 className="footer__h4">Let's get in touch!</h4>
         <div className="footer__items">
             <div className="footer__item">
