@@ -30,8 +30,35 @@
     }
 }
 
-@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
     .softskills .softskills__items .softskills__item {
         height: 320px;
+    }
+}
+@media only screen and  (max-width:1366px) {
+    .softskills .softskills__items .softskills__item {
+        height: 340px;
+    }
+}
+@media only screen and  (max-width:1024px) {
+    .softskills .softskills__items .softskills__item {
+        height: 570px;
+    }
+}
+@media only screen and  (max-width:768px) {
+    .softskills .softskills__items {
+        flex-direction: column;
+    }
+    .softskills .softskills__items .softskills__item {
+        height: 30vh !important;
+        width: 45vh;
+        text-align: center;
+        padding: 32px;
+        margin: 2vh;
+        margin-left: 15vh;
+    }
+    .softskills .softskills__h2 {
+        margin-left: 4vh;
+        margin-bottom: 10vh;
     }
 }

@@ -85,36 +85,67 @@
     transform: translate(-50%,-50%);
   }
   
-  @media only screen and (min-width: 1441px) and (max-width: 1600px) {
+  @media only screen and (max-width: 1600px) {
     .intro .intro__left .intro__h1 {
         height: 370px;
     }
     .middle {
-        right: 123.5vh;
+        right: 128.5vh;
     }
     }
-    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    @media only screen and  (max-width: 1440px) {
         .intro .intro__right img {
             max-width: 560px;
         }
         .middle {
-            right: 105.5vh;
+            right: 112.5vh;
         }
         .intro .intro__left .intro__h1 {
-            height: 365px;
+            height: 215px;
         }
     }
-@media only screen and (max-width: 1025px) and (max-width:1366px) {
-    /* стили */
+@media only screen and  (max-width:1366px) {
+    .middle {
+        right: 104.5vh;
+    }
+    .intro .intro__left .intro__h1 {
+        height: 365px;
+    }
     }
 @media only screen and (max-width: 1024px) {
-    /* стили */
+    .intro .intro__left .intro__h1 {
+        height: 440px;
+    }
+    .middle {
+        right: 69.5vh;
+    }
     }
 @media only screen and (max-width: 768px) {
-    /* стили */
+    .container {
+        max-width: 90%;
+    }
+    .middle {
+        right: 24%;
+        margin-top: 50px;
+    }
+    .intro {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .intro .intro__right img {
+        max-width: 90%;
+        margin-top: 10px;
+    }
+    .intro .intro__left {
+        margin-top: 15vh;
+        text-align: center;
+        width: 100%;
+    }
+    .intro .intro__left .intro__h1 {
+        height: 250px;
+    }
     }
 @media only screen and (max-width: 360px) {
-    /* стили */
     }
 @media only screen and (max-width: 320px) {
     /* стили */
