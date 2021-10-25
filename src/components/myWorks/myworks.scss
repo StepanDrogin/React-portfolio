@@ -84,3 +84,71 @@ margin-bottom: 60px;
         text-align: left;
     }
 }
+
+@media only screen and (min-width: 1441px) and (max-width: 1600px) {
+    .works__item-1 {
+        height: 310px;
+        width: 600px;
+    }
+    .works__item-1 img{
+        height: 310px;
+        width: 600px;
+    }
+    .works__item-2 {
+        height: 310px;
+        width: 600px;
+    }
+    .works__item-2 img{
+        height: 310px;
+        width: 600px;
+    }
+    .works__item-3 {
+        width: 600px;
+    }
+    .works__item-3 img{
+        width: 600px;
+    }
+    .works__item-4 {
+        height: 310px;
+        width: 600px;
+    }
+    .works__item-4 img{
+        height: 310px;
+        width: 600px;
+    }
+}
+@media only screen and (min-width: 1367px) and (max-width: 1440px) {
+    .works__item-1 {
+        height: 310px;
+        width: 550px;
+    }
+    .works__item-1 img{
+        height: 310px;
+        width: 550px;
+    }
+    .works__item-2 {
+        height: 310px;
+        width: 550px;
+    }
+    .works__item-2 img{
+        height: 310px;
+        width: 550px;
+    }
+    .works__item-3 {
+        width: 550px;
+    }
+    .works__item-3 img{
+        width: 550px;
+    }
+    .works__item-4 {
+        height: 310px;
+        width: 550px;
+    }
+    .works__item-4 img{
+        height: 310px;
+        width: 550px;
+    }
+    .works__grid .works__item-5 {
+        margin: 10px;
+    }
+}

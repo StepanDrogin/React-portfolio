@@ -84,3 +84,38 @@
     right: 145.5vh;
     transform: translate(-50%,-50%);
   }
+  
+  @media only screen and (min-width: 1441px) and (max-width: 1600px) {
+    .intro .intro__left .intro__h1 {
+        height: 370px;
+    }
+    .middle {
+        right: 123.5vh;
+    }
+    }
+    @media only screen and (min-width: 1367px) and (max-width: 1440px) {
+        .intro .intro__right img {
+            max-width: 560px;
+        }
+        .middle {
+            right: 105.5vh;
+        }
+        .intro .intro__left .intro__h1 {
+            height: 365px;
+        }
+    }
+@media only screen and (max-width: 1025px) and (max-width:1366px) {
+    /* стили */
+    }
+@media only screen and (max-width: 1024px) {
+    /* стили */
+    }
+@media only screen and (max-width: 768px) {
+    /* стили */
+    }
+@media only screen and (max-width: 360px) {
+    /* стили */
+    }
+@media only screen and (max-width: 320px) {
+    /* стили */
+    }
