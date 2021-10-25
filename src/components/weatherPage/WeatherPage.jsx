@@ -18,9 +18,7 @@ export default function WeatherPage() {
         <h3 className='page__h3'>Weather</h3>
         <div className='pages'>
         <div className='page__left'>
-            <p className='page__p'>Long term project to replace ageing internal command-line system with a modern web app using React to consume API data. Client is a US-based retirement fund manager with over $10B in assets.
-The Employee Portal is used by employees
-of the company to manage customer accounts, transactions, and related information</p>
+            <p className='page__p'>This weather app i wrote on react.js. This app take API from Open weather API and show you forecast based on your location.  You can look at source code by clicking on the image and going to the project repository in github.</p>
         <div className='page__icons'>
             <img src={HTML} className='page__icon' alt='html icon'></img>
             <img src={CSS} className='page__icon' alt='css icon'></img>
@@ -28,7 +26,10 @@ of the company to manage customer accounts, transactions, and related informatio
         </div>
         </div>
         <div className='page__right'>
+                            {/* eslint-disable-next-line */}
+                            <a href='https://github.com/StepanDrogin/weather-app' target='_blank'>
             <img src={WeatherImage} className='weather__image' alt='weather'></img>
+            </a>
         </div>
         </div>
         <h2 className='page__h2'>More work</h2>

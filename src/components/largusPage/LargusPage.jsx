@@ -19,9 +19,10 @@ export default function LargusPage() {
         <h3 className='page__h3'>Largus Stavropol</h3>
         <div className='pages'>
         <div className='page__left'>
-            <p className='page__p'>Long term project to replace ageing internal command-line system with a modern web app using React to consume API data. Client is a US-based retirement fund manager with over $10B in assets.
-The Employee Portal is used by employees
-of the company to manage customer accounts, transactions, and related information</p>
+            <p className='page__p'>This is a single page application wrotten on Vue.js. 
+In this application, I have created data loading from the database through an appeal to api, the functionality of adding, deleting and changing the quantity of goods. 
+Also i created pop up in cart.
+You can look at source code by clicking on the image and going to the project repository in github.</p>
         <div className='page__icons'>
             <img src={HTML} className='page__icon' alt='html icon'></img>
             <img src={CSS} className='page__icon' alt='css icon'></img>
@@ -30,7 +31,7 @@ of the company to manage customer accounts, transactions, and related informatio
         </div>
         <div className='page__right'>
             {/* eslint-disable-next-line */}
-            <a href='https://vk.com/feed' target='_blank'>
+            <a href='https://github.com/StepanDrogin/LargusStavropol-eshop' target='_blank'>
             <img src={LargusFrontImage} className='page__image-front' alt='largus'></img>
                 <img src={LargusBackImage} className='page__image-back' alt='largus'></img>
             </a>

@@ -19,9 +19,8 @@ export default function NailsPage() {
         <h3 className='page__h3'>Nails</h3>
         <div className='pages'>
         <div className='page__left'>
-            <p className='page__p'>Long term project to replace ageing internal command-line system with a modern web app using React to consume API data. Client is a US-based retirement fund manager with over $10B in assets.
-The Employee Portal is used by employees
-of the company to manage customer accounts, transactions, and related information</p>
+            <p className='page__p'>This landing page i created on HTML and SCSS. On this page i created animations and feedback form.
+            You can look at source code by clicking on the image and going to the project repository in github</p>
         <div className='page__icons'>
             <img src={HTML} className='page__icon' alt='html icon'></img>
             <img src={CSS} className='page__icon' alt='css icon'></img>
@@ -29,8 +28,11 @@ of the company to manage customer accounts, transactions, and related informatio
         </div>
         </div>
         <div className='page__right'>
+                    {/* eslint-disable-next-line */}
+        <a href='https://github.com/StepanDrogin/Nails' target='_blank'>
             <img src={NailsFrontImage} className='page__image-front' alt='Nails'></img>
             <img src={NailsBackImage} className='page__image-back' alt='Nails'></img>
+            </a>
         </div>
         </div>
         <h2 className='page__h2'>More work</h2>

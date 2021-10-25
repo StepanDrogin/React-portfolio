@@ -19,9 +19,7 @@ export default function KonstuctPage() {
         <h3 className='page__h3'>Konstuct</h3>
         <div className='pages'>
         <div className='page__left'>
-            <p className='page__p'>Long term project to replace ageing internal command-line system with a modern web app using React to consume API data. Client is a US-based retirement fund manager with over $10B in assets.
-The Employee Portal is used by employees
-of the company to manage customer accounts, transactions, and related information</p>
+            <p className='page__p'>This is also on of my landing page project, than i wrote on HTML and SCSS. You can look at source code by clicking on the image and going to the project repository in github.</p>
         <div className='page__icons'>
             <img src={HTML} className='page__icon' alt='html icon'></img>
             <img src={CSS} className='page__icon' alt='css icon'></img>
@@ -29,8 +27,11 @@ of the company to manage customer accounts, transactions, and related informatio
         </div>
         </div>
         <div className='page__right'>
+                    {/* eslint-disable-next-line */}
+                    <a href='https://github.com/StepanDrogin/Konstruct' target='_blank'>
             <img src={KonstuctBackImage} className='page__image-front konstuct-front' alt='Nails'></img>
             <img src={KonstuctFrontImage} className='page__image-back konstuct-back' alt='Nails'></img>
+            </a>
         </div>
         </div>
         <h2 className='page__h2'>More work</h2>

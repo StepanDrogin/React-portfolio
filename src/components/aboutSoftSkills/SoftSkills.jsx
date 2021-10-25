@@ -15,21 +15,20 @@ export default function SoftSkills() {
             <img alt="icon" src={Communication} className="softskills__item_icon">
             </img>
             <h3 className="softskills__item_h3">Good communication</h3>
-            <p className="softskills__item_p">I create successful responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development, HTML, CSS, JS, building small and medium web apps, custom plugins, features, animations, and coding interactive layouts.</p>
+            <p className="softskills__item_p">I can understand instructions, acquiring new skills, making requests, asking questions and relaying information with ease.</p>
             </div>
             <div className="softskills__item">
             <img alt="icon" src={Willingness} className="softskills__item_icon">
             </img>
             <h3 className="softskills__item_h3">Willingness to learn</h3>
-            <p className="softskills__item_p">Use the power of Webflow CMS to add new case studies, blog posts, categories and tags.
-We're always glad to help, so don’t hesitate to contact us if you have any questions.</p>
+            <p className="softskills__item_p">I like learning new technologies and adopting skills and knowledge and the best practices from more experienced developers.</p>
             </div>
             <div className="softskills__item">
             <img alt="icon" src={Solving} className="softskills__item_icon">
             </img>
             <h3 className="softskills__item_h3">Problem-solving</h3>
-            <p className="softskills__item_p">Defining the problem, identifying the scope and finally, organising the design roadmap to bring out 100% of every project.
-Defining the problem, identifying the scope and finally, organising the design roadmap to bring out 100% of every project.</p>
+            <p className="softskills__item_p">Defining the problem, identifying the scope and finally, organising every project.
+            I also believe that the ability to use search engines to find the information you need is a very important skill for any developer and I try to improve it.</p>
             </div>
             </div>
         </div>
