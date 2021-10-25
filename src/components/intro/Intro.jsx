@@ -22,8 +22,7 @@ export default function Intro() {
                 <h1 className="intro__h1">I am a <span className='intro__h1-thick'> frontend developer </span> from Russia working in 
                 <p className="itype" ref={textRef}></p>
                 </h1>
-                <p className="intro__p">Are you looking for a communications front-end developer who works alone and in a team and above all, passionate about everything JavaScript (including React)? Let me know! I also have experience in design.</p>
-                <p className="intro__p">Now I cannot complete a new task. Want to be the first to know when I'm available again?</p>
+                <p className="intro__p">Are you looking for a communications front-end developer who works alone and in a team and above all, passionate about everything JavaScript (including Vue or React)?</p>
                 <div className='middle'>
                 {/* eslint-disable-next-line */}
                 <a href="#" className="btn btn3">Contact me &#8594;</a>
