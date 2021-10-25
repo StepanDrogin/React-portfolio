@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="footer__items">
             <div className="footer__item">
                     {/* eslint-disable-next-line */}
-                <a href="#" className="footer__item-link">
+                <a href="mailto:drogenko.stepan@yandex.ru" className="footer__item-link">
                     <img src={Mail} className="footer__item-img" alt="icon"></img>
                 </a>
             </div>
@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <div className="footer__item">
                     {/* eslint-disable-next-line */}
-                <a href="#" className="footer__item-link">
+                <a href="https://github.com/StepanDrogin" target='_blank' className="footer__item-link">
                     <img src={GitHub} className="footer__item-img" alt="icon"></img>
                 </a>
             </div>
