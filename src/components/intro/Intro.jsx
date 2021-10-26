@@ -25,7 +25,7 @@ export default function Intro() {
                 <p className="intro__p">Are you looking for a communications front-end developer who works alone and in a team and above all, passionate about everything JavaScript (including Vue or React)?</p>
                 <div className='middle'>
                 {/* eslint-disable-next-line */}
-                <a href="#" className="btn btn3">Contact me &#8594;</a>
+                <a href="mailto:drogenko.stepan@yandex.ru" className="btn btn3">Contact me &#8594;</a>
                 </div>
             </div>
             <div className="intro__right">
