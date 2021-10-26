@@ -13,6 +13,7 @@ import BEM from '../../assets/svg/BEM.svg'
 import JavaScript from '../../assets/svg/js.svg'
 import GitHub from '../../assets/svg/git.svg'
 import Engish from '../../assets/svg/translation.svg'
+import WheelMobile from '../../assets/img/wheel-mobile.png'
 
 export default function SkillsWheel() {
     return (
@@ -86,6 +87,7 @@ export default function SkillsWheel() {
 <h3 className="GitHub__h3">GitHub</h3>
 <h3 className="English__h3">English B1</h3>
            </div>
+           <img src={WheelMobile} className="wheel__mobile" alt='mobile resolution wheel'></img>
         </div>
     )
 };
