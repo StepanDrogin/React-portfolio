@@ -290,6 +290,9 @@ margin-bottom: 60px;
     .works__item-4 {
         width: 38vh;
     }
+    .works__grid .works__link {
+        text-align: center;
+    }
 }
 @media only screen and (max-width: 360px) {
     .works__grid .works__link {
