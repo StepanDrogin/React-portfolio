@@ -83,12 +83,12 @@
     padding-top: 25px;
   }
 }
-@media only screen and (max-width: 360px) {
-.navbar__right {
+@media only screen and (max-width: 393px) {
+  .container .navbar .navbar__left {
+    margin-left: 35px;
+  }
+  .navbar__right {
     display: none;
-}
-.container .navbar {
-  align-items: flex-start;
 }
 #react-burger-menu-btn {
   display: block;
@@ -103,7 +103,9 @@
     left: 84%;
     top: 40px;
   }
-  
+  .container .navbar {
+    align-items: flex-start;
+  }
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
     background: #4AA200;
@@ -169,4 +171,6 @@
   .bm-overlay {
     background: #252934 !important;
   }
+}
+@media only screen and (max-width: 360px) {
 }

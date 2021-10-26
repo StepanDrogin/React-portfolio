@@ -783,6 +783,15 @@
         left: 22.5vh;
     }
     }
+@media only screen and (max-width: 393px) {
+    .wheel {
+        display: none;
+    }
+    .wheel__mobile {
+        display: block;
+        margin: 0 auto;
+    }
+}
 @media only screen and (max-width: 360px) {
     .wheel {
         display: none;
