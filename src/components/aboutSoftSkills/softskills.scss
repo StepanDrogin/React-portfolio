@@ -62,3 +62,17 @@
         margin-bottom: 10vh;
     }
 }
+@media only screen and  (max-width:360px) {
+    .softskills {
+        margin-top: 13vh;
+        margin-bottom: 100px;
+    }
+    .softskills .softskills__items .softskills__item {
+        width: 25vh;
+        margin: 10px auto;
+        height: 40vh !important;
+    }
+    .softskills .softskills__h2 {
+        margin: 55px auto;
+    }
+}

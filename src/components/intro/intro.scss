@@ -146,7 +146,40 @@
     }
     }
 @media only screen and (max-width: 360px) {
+    .intro .intro__left .intro__h1 {
+        height: 380px;
+    }
+    .intro .intro__left {
+        margin-top: 5vh;
+    }
+    .middle {
+        right: -5%;
+        margin-top: 50px;
+    }
+    .container .navbar .navbar__left {
+        margin-left: 25px;
+    }
+    .intro .intro__right img {
+        margin: 0 6%;
+    }
+    .intro .intro__left .intro__h1 {
+        font-size: 50px;
+    }
+    .intro__h1-thick {
+        font-size: 50px;
+    }
     }
 @media only screen and (max-width: 320px) {
-    /* стили */
+    .intro .intro__left .intro__h1 {
+        height: 380px;
+    }
+    .middle {
+        right: -13%;
+    }
+    .intro .intro__left .intro__h1 {
+        font-size: 50px;
+    }
+    .intro__h1-thick {
+        font-size: 50px;
+    }
     }

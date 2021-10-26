@@ -49,3 +49,72 @@
         }
     }
 }
+@media only screen and (max-width: 1600px) {
+.page__right {
+    margin-left: 25px;
+}
+.page__cards .page__card {
+    margin: 0px auto 215px 0px;
+}
+.page__card-img {
+    width: 390px;
+    height: 350px;
+}
+}
+@media only screen and (max-width: 1440px) {
+    .page__card-img {
+        width: 98%;
+        height: 100%;
+    }
+}
+@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1024px) {
+    .pages {
+        flex-direction: column;
+    }
+    .page__icon {
+        margin-bottom: 80px;
+    }
+    .page__h2 {
+        margin-top: 250px;
+    }
+    .page__left {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .page__image-back {
+        height: 35vh;
+        width: 35vh;
+    }
+    .page__image-front {
+        display: none;
+    }
+    .page__h2 {
+        margin-top: 175px;
+    }
+    .page__left {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .page__right {
+        margin: 0 auto;
+    }
+}
+@media only screen and (max-width: 360px) {
+    .page__cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .page__cards .page__card {
+        margin: 0px auto 15px 0px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .page__image-back {
+        height: 32vh;
+        width: 32vh;
+    }
+}

@@ -212,8 +212,13 @@
         left: 45vh;
         top: -11.5vh;
     }
+    .wheel__mobile {
+        display: none;
+    }
 }
-
+.wheel__mobile {
+    display: none;
+}
 @media only screen and (max-width: 1600px) {
     .wheel .wheel__logo {
         left: 43vh;
@@ -392,20 +397,20 @@
         top: 5.5vh;
     }
     .wheel .Figma__logo {
-        left: 77vh;
-        top: 15vh;
+        left: 78vh;
+        top: 16vh;
     }
     .wheel .Jquery__logo {
-        left: 77vh;
-        top: 25vh;
+        left: 78vh;
+        top: 26vh;
     }
     .wheel .React__logo {
-        left: 73.5vh;
-        top: 35vh;
+        left: 74.5vh;
+        top: 36vh;
     }
     .wheel .API__logo {
         left: 66.5vh;
-        top: 41.5vh;
+        top: 43.5vh;
     }
     .wheel .AXIOS__logo {
         left: 55.5vh;
@@ -779,7 +784,13 @@
     }
     }
 @media only screen and (max-width: 360px) {
-    /* стили */
+    .wheel {
+        display: none;
+    }
+    .wheel__mobile {
+        display: block;
+        margin: 0 auto;
+    }
     }
 @media only screen and (max-width: 320px) {
     /* стили */

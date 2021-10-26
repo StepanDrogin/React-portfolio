@@ -31,3 +31,142 @@
         }
     }
 }
+
+@media only screen and (max-width:1920px) {
+  #react-burger-menu-btn {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
+}
+@media only screen and (max-width:1600px) {
+  #react-burger-menu-btn {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
+}
+@media only screen and (max-width:1440px) {
+  #react-burger-menu-btn {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1366px) {
+  #react-burger-menu-btn {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #react-burger-menu-btn {
+    display: none;
+  }
+  .bm-burger-bars {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container .navbar {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .navbar__right {
+    padding-top: 25px;
+  }
+}
+@media only screen and (max-width: 360px) {
+.navbar__right {
+    display: none;
+}
+.container .navbar {
+  align-items: flex-start;
+}
+#react-burger-menu-btn {
+  display: block;
+}
+.bm-burger-bars {
+  display: block;
+}
+.bm-burger-button {
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    left: 84%;
+    top: 40px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #4AA200;
+  }
+  
+  /* Color/shape of burger icon bars on hover*/
+  .bm-burger-bars-hover {
+    background: #FFFFFF;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    margin-top: 2vh;
+    margin-right: 2vh;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #4AA200;
+  }
+  /*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+  .bm-menu-wrap {
+    position: fixed;
+    top: 0vh;
+    width: 100% !important;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    height: 35% !important;
+  }
+  
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+    padding: 0.8em;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0em;
+    height: 80% !important;
+  }
+  
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+    padding: 12px;
+    text-align: center;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: #252934 !important;
+  }
+}
