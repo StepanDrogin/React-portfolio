@@ -18,13 +18,13 @@ export default function Footer() {
             </div>
             <div className="footer__item">
                     {/* eslint-disable-next-line */}
-                <a href="#" className="footer__item-link">
+                <a href="https://www.linkedin.com/in/stepan-drogin-b0ab85215/" className="footer__item-link">
                     <img src={Linkedin} className="footer__item-img" alt="icon"></img>
                 </a>
             </div>
             <div className="footer__item">
                     {/* eslint-disable-next-line */}
-                <a href="#" className="footer__item-link">
+                <a href="skype:[live:.cid.ef67230e60df834d]" className="footer__item-link">
                     <img src={Skype} className="footer__item-img" alt="icon"></img>
                 </a>
             </div>
