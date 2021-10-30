@@ -1,806 +1,805 @@
 @import "../../global.scss";
 
 .wheel {
-    position: relative;
-    h3 {
-        @extend %font-skills-h3;
-        color: $graySecond;
-    }
-    .wheel__logo {
-        position: absolute;
-        left: 50vh;
-    }
-    .skillsWheel__h2 {
-        position: absolute;
-        left: 68vh;
-        top: 18vh;
-        @extend %font-h2;
-        color: $white;
-    }
-    .HTML__logo {
-        position: absolute;
-        left: 76vh;
-        top: 1.5vh;
-    }
-    .CSS__logo {
-        position: absolute;
-        left: 84vh;
-        top: 5.5vh;
-    }
-    .Figma__logo {
-        position: absolute;
-        left: 92vh;
-        top: 15vh;
-    }
-    .Jquery__logo {
-        position: absolute;
-        left: 92vh;
-        top: 24vh;
-    }
-    .React__logo {
-        position: absolute;
-        left: 88.5vh;
-        top: 33vh;
-    }
-    .API__logo {
-        position: absolute;
-        left: 81.5vh;
-        top: 39.5vh;
-    }
-    .AXIOS__logo {
-        position: absolute;
-        left: 71.5vh;
-        top: 41.5vh;
-    }
-    .Webpack__logo {
-        position: absolute;
-        left: 61.5vh;
-        top: 38.5vh;
-    }
-    .Vue__logo {
-        position: absolute;
-        left: 55vh;
-        top: 33vh;
-    }
-    .BEM__logo {
-        position: absolute;
-        left: 52.5vh;
-        top: 24vh;
-    }
-    .JavaScript__logo {
-        position: absolute;
-        left: 52vh;
-        top: 14vh;
-    }
-    .GitHub__logo {
-        position: absolute;
-        left: 58.5vh;
-        top: 6.5vh;
-    }
-    .Engish__logo {
-        position: absolute;
-        left: 66.5vh;
-        top: 1.5vh;
-    }
-    .line__html {
-        position: absolute;
-        left: 81vh;
-        top: -10vh;
-    }
-    .line__css {
-        position: absolute;
-        left: 91.5vh;
-        top: -2vh;
-    }
-    .line__figma {
-        position: absolute;
-        left: 99vh;
-        top: 12vh;
-    }
-    .line__jquery {
-        position: absolute;
-        left: 100vh;
-        top: 27.5vh;
-    }
-    .line__react {
-        position: absolute;
-        left: 96vh;
-        top: 39.5vh;
-    }
-    .line__API {
-        position: absolute;
-        left: 87vh;
-        top: 47.5vh;
-    }
-    .line__AXIOS {
-        position: absolute;
-        left: 75vh;
-        top: 50.5vh;
-    }
-    .line__webpack {
-        position: absolute;
-        left: 46vh;
-        top: 47vh;
-    }
-    .line__vue {
-        position: absolute;
-        left: 33vh;
-        top: 39vh;
-    }
-    .line__BEM {
-        position: absolute;
-        left: 33vh;
-        top: 28vh;
-    }
-    .line__javascript {
-        position: absolute;
-        left: 33vh;
-        top: 12vh;
-    }
-    .line__github {
-        position: absolute;
-        left: 42.5vh;
-        top: -2vh;
-    }
-    .line__english {
-        position: absolute;
-        left: 59vh;
-        top: -10vh;
-    }
-    .HTML__h3 {
-        position: absolute;
-        left: 93vh;
-        top: -11.5vh;
-    }
-    .CSS__h3 {
-        position: absolute;
-        left: 109vh;
-        top: -3.5vh;
-    }
-    .Figma__h3 {
-        position: absolute;
-        left: 119vh;
-        top: 10.5vh;
-    }
-    .Jquery__h3 {
-        position: absolute;
-        left: 119vh;
-        top: 27vh;
-    }
-    .React__h3 {
-        position: absolute;
-        left: 119vh;
-        top: 41vh;
-    }
-    .API__h3 {
-        position: absolute;
-        left: 105vh;
-        top: 55vh;
-    }
-    .AXIOS__h3 {
-        position: absolute;
-        left: 72vh;
-        top: 65vh;
-    }
-    .Webpack_h3 {
-        position: absolute;
-        left: 33vh;
-        top: 54.5vh;
-    }
-    .Vue__h3 {
-        position: absolute;
-        left: 4vh;
-        top: 42vh;
-    }
-    .BEM__h3 {
-        position: absolute;
-        left: 26vh;
-        top: 28vh;
-    }
-    .JS__h3 {
-        position: absolute;
-        left: -1vh;
-        top: 10.5vh;
-    }
-    .GitHub__h3 {
-        position: absolute;
-        left: 33vh;
-        top: -3.5vh;
-    }
-    .English__h3 {
-        position: absolute;
-        left: 45vh;
-        top: -11.5vh;
-    }
-    .wheel__mobile {
-        display: none;
-    }
+  position: relative;
+  h3 {
+    @extend %font-skills-h3;
+    color: $graySecond;
+  }
+  .wheel__logo {
+    position: absolute;
+    left: 50vh;
+  }
+  .skillsWheel__h2 {
+    position: absolute;
+    left: 68vh;
+    top: 18vh;
+    @extend %font-h2;
+    color: $white;
+  }
+  .HTML__logo {
+    position: absolute;
+    left: 76vh;
+    top: 1.5vh;
+  }
+  .CSS__logo {
+    position: absolute;
+    left: 84vh;
+    top: 5.5vh;
+  }
+  .Figma__logo {
+    position: absolute;
+    left: 92vh;
+    top: 15vh;
+  }
+  .Jquery__logo {
+    position: absolute;
+    left: 92vh;
+    top: 24vh;
+  }
+  .React__logo {
+    position: absolute;
+    left: 88.5vh;
+    top: 33vh;
+  }
+  .API__logo {
+    position: absolute;
+    left: 81.5vh;
+    top: 39.5vh;
+  }
+  .AXIOS__logo {
+    position: absolute;
+    left: 71.5vh;
+    top: 41.5vh;
+  }
+  .Webpack__logo {
+    position: absolute;
+    left: 61.5vh;
+    top: 38.5vh;
+  }
+  .Vue__logo {
+    position: absolute;
+    left: 55vh;
+    top: 33vh;
+  }
+  .BEM__logo {
+    position: absolute;
+    left: 52.5vh;
+    top: 24vh;
+  }
+  .JavaScript__logo {
+    position: absolute;
+    left: 52vh;
+    top: 14vh;
+  }
+  .GitHub__logo {
+    position: absolute;
+    left: 58.5vh;
+    top: 6.5vh;
+  }
+  .Engish__logo {
+    position: absolute;
+    left: 66.5vh;
+    top: 1.5vh;
+  }
+  .line__html {
+    position: absolute;
+    left: 81vh;
+    top: -10vh;
+  }
+  .line__css {
+    position: absolute;
+    left: 91.5vh;
+    top: -2vh;
+  }
+  .line__figma {
+    position: absolute;
+    left: 99vh;
+    top: 12vh;
+  }
+  .line__jquery {
+    position: absolute;
+    left: 100vh;
+    top: 27.5vh;
+  }
+  .line__react {
+    position: absolute;
+    left: 96vh;
+    top: 39.5vh;
+  }
+  .line__API {
+    position: absolute;
+    left: 87vh;
+    top: 47.5vh;
+  }
+  .line__AXIOS {
+    position: absolute;
+    left: 75vh;
+    top: 50.5vh;
+  }
+  .line__webpack {
+    position: absolute;
+    left: 46vh;
+    top: 47vh;
+  }
+  .line__vue {
+    position: absolute;
+    left: 33vh;
+    top: 39vh;
+  }
+  .line__BEM {
+    position: absolute;
+    left: 33vh;
+    top: 28vh;
+  }
+  .line__javascript {
+    position: absolute;
+    left: 33vh;
+    top: 12vh;
+  }
+  .line__github {
+    position: absolute;
+    left: 42.5vh;
+    top: -2vh;
+  }
+  .line__english {
+    position: absolute;
+    left: 59vh;
+    top: -10vh;
+  }
+  .HTML__h3 {
+    position: absolute;
+    left: 93vh;
+    top: -11.5vh;
+  }
+  .CSS__h3 {
+    position: absolute;
+    left: 109vh;
+    top: -3.5vh;
+  }
+  .Figma__h3 {
+    position: absolute;
+    left: 119vh;
+    top: 10.5vh;
+  }
+  .Jquery__h3 {
+    position: absolute;
+    left: 119vh;
+    top: 27vh;
+  }
+  .React__h3 {
+    position: absolute;
+    left: 119vh;
+    top: 41vh;
+  }
+  .API__h3 {
+    position: absolute;
+    left: 105vh;
+    top: 55vh;
+  }
+  .AXIOS__h3 {
+    position: absolute;
+    left: 72vh;
+    top: 65vh;
+  }
+  .Webpack_h3 {
+    position: absolute;
+    left: 33vh;
+    top: 54.5vh;
+  }
+  .Vue__h3 {
+    position: absolute;
+    left: 4vh;
+    top: 42vh;
+  }
+  .BEM__h3 {
+    position: absolute;
+    left: 26vh;
+    top: 28vh;
+  }
+  .JS__h3 {
+    position: absolute;
+    left: -1vh;
+    top: 10.5vh;
+  }
+  .GitHub__h3 {
+    position: absolute;
+    left: 33vh;
+    top: -3.5vh;
+  }
+  .English__h3 {
+    position: absolute;
+    left: 45vh;
+    top: -11.5vh;
+  }
+  .wheel__mobile {
+    display: none;
+  }
 }
 .wheel__mobile {
-    display: none;
+  display: none;
 }
 @media only screen and (max-width: 1600px) {
-    .wheel .wheel__logo {
-        left: 43vh;
-    }
-    .wheel .skillsWheel__h2 {
-        left: 63vh;
-        top: 20vh;
-    }
-    .wheel .HTML__logo {
-        left: 71.5vh;
-        top: 1.5vh;
-    }
-    .wheel .CSS__logo {
-        left: 80.5vh;
-        top: 6vh;
-    }
-    .wheel .Figma__logo {
-        left: 89vh;
-        top: 16vh;
-    }
-    .wheel .Jquery__logo {
-        left: 89vh;
-        top: 26.5vh;
-    }
-    .wheel .React__logo {
-        left: 85.5vh;
-        top: 36vh;
-    }
-    .wheel .API__logo {
-        left: 77.5vh;
-        top: 43.5vh;
-    }
-    .wheel .AXIOS__logo {
-        left: 66.5vh;
-        top: 45.5vh;
-    }
-    .wheel .Webpack__logo {
-        left: 55.5vh;
-        top: 42.5vh;
-    }
-    .wheel .Vue__logo {
-        left: 48vh;
-        top: 36vh;
-    }
-    .wheel .BEM__logo {
-        left: 45.5vh;
-        top: 27vh;
-    }
-    .wheel .JavaScript__logo {
-        left: 45vh;
-        top: 15vh;
-    }
-    .wheel .GitHub__logo {
-        left: 52.5vh;
-    }
-    .wheel .Engish__logo {
-        left: 61vh;
-    }
-    .wheel .line__html {
-        left: 77vh;
-        top: -11vh;
-    }
-    .wheel .line__css {
-        left: 89.5vh;
-        top: -2vh;
-    }
-    .wheel .line__figma {
-        left: 96vh;
-    }
-    .wheel .line__jquery {
-        left: 98vh;
-        top: 30.5vh;
-    }
-    .wheel .line__react {
-        left: 94vh;
-        top: 43.5vh;
-    }
-    .wheel .line__API {
-        left: 84vh;
-        top: 52.5vh;
-    }
-    .wheel .line__AXIOS {
-        left: 70.5vh;
-        top: 55.5vh;
-    }
-    .wheel .line__webpack {
-        left: 39vh;
-        top: 52vh;
-    }
-    .wheel .line__vue {
-        left: 24vh;
-        top: 43vh;
-    }
-    .wheel .line__BEM {
-        left: 24vh;
-        top: 31vh;
-    }
-    .wheel .line__javascript {
-        left: 24vh;
-        top: 12vh;
-    }
-    .wheel .line__github {
-        left: 34.5vh;
-    }
-    .wheel .line__english {
-        left: 51vh;
-        top: -11vh;
-    }
-    .wheel .HTML__h3 {
-        left: 90vh;
-        top: -12.5vh;
-    }
-    .wheel .CSS__h3 {
-        left: 108vh;
-        top: -4.5vh;
-    }
-    .wheel .Figma__h3 {
-        left: 117vh;
-    }
-    .wheel .Jquery__h3 {
-        left: 118vh;
-        top: 30vh;
-    }
-    .wheel .React__h3 {
-        left: 118vh;
-        top: 45vh;
-    }
-    .wheel .API__h3 {
-        left: 104vh;
-        top: 61vh;
-    }
-    .wheel .AXIOS__h3 {
-        left: 67vh;
-        top: 71vh;
-    }
-    .wheel .Webpack_h3 {
-        left: 25vh;
-        top: 60.5vh;
-    }
-    .wheel .Vue__h3 {
-        left: -8vh;
-        top: 46vh;
-    }
-    .wheel .BEM__h3 {
-        left: 17vh;
-        top: 31vh;
-    }
-    .wheel .JS__h3 {
-        left: -13vh;
-        top: 10.5vh;
-    }
-    .wheel .GitHub__h3 {
-        left: 24vh;
-        top: -3.5vh;
-    }
-    .wheel .English__h3 {
-        left: 36vh;
-        top: -12.5vh;
-    }
-
-    }
+  .wheel .wheel__logo {
+    left: 43vh;
+  }
+  .wheel .skillsWheel__h2 {
+    left: 63vh;
+    top: 20vh;
+  }
+  .wheel .HTML__logo {
+    left: 71.5vh;
+    top: 1.5vh;
+  }
+  .wheel .CSS__logo {
+    left: 80.5vh;
+    top: 6vh;
+  }
+  .wheel .Figma__logo {
+    left: 89vh;
+    top: 16vh;
+  }
+  .wheel .Jquery__logo {
+    left: 89vh;
+    top: 26.5vh;
+  }
+  .wheel .React__logo {
+    left: 85.5vh;
+    top: 36vh;
+  }
+  .wheel .API__logo {
+    left: 77.5vh;
+    top: 43.5vh;
+  }
+  .wheel .AXIOS__logo {
+    left: 66.5vh;
+    top: 45.5vh;
+  }
+  .wheel .Webpack__logo {
+    left: 55.5vh;
+    top: 42.5vh;
+  }
+  .wheel .Vue__logo {
+    left: 48vh;
+    top: 36vh;
+  }
+  .wheel .BEM__logo {
+    left: 45.5vh;
+    top: 27vh;
+  }
+  .wheel .JavaScript__logo {
+    left: 45vh;
+    top: 15vh;
+  }
+  .wheel .GitHub__logo {
+    left: 52.5vh;
+  }
+  .wheel .Engish__logo {
+    left: 61vh;
+  }
+  .wheel .line__html {
+    left: 77vh;
+    top: -11vh;
+  }
+  .wheel .line__css {
+    left: 89.5vh;
+    top: -2vh;
+  }
+  .wheel .line__figma {
+    left: 96vh;
+  }
+  .wheel .line__jquery {
+    left: 98vh;
+    top: 30.5vh;
+  }
+  .wheel .line__react {
+    left: 94vh;
+    top: 43.5vh;
+  }
+  .wheel .line__API {
+    left: 84vh;
+    top: 52.5vh;
+  }
+  .wheel .line__AXIOS {
+    left: 70.5vh;
+    top: 55.5vh;
+  }
+  .wheel .line__webpack {
+    left: 39vh;
+    top: 52vh;
+  }
+  .wheel .line__vue {
+    left: 24vh;
+    top: 43vh;
+  }
+  .wheel .line__BEM {
+    left: 24vh;
+    top: 31vh;
+  }
+  .wheel .line__javascript {
+    left: 24vh;
+    top: 12vh;
+  }
+  .wheel .line__github {
+    left: 34.5vh;
+  }
+  .wheel .line__english {
+    left: 51vh;
+    top: -11vh;
+  }
+  .wheel .HTML__h3 {
+    left: 90vh;
+    top: -12.5vh;
+  }
+  .wheel .CSS__h3 {
+    left: 108vh;
+    top: -4.5vh;
+  }
+  .wheel .Figma__h3 {
+    left: 117vh;
+  }
+  .wheel .Jquery__h3 {
+    left: 118vh;
+    top: 30vh;
+  }
+  .wheel .React__h3 {
+    left: 118vh;
+    top: 45vh;
+  }
+  .wheel .API__h3 {
+    left: 104vh;
+    top: 61vh;
+  }
+  .wheel .AXIOS__h3 {
+    left: 67vh;
+    top: 71vh;
+  }
+  .wheel .Webpack_h3 {
+    left: 25vh;
+    top: 60.5vh;
+  }
+  .wheel .Vue__h3 {
+    left: -8vh;
+    top: 46vh;
+  }
+  .wheel .BEM__h3 {
+    left: 17vh;
+    top: 31vh;
+  }
+  .wheel .JS__h3 {
+    left: -13vh;
+    top: 10.5vh;
+  }
+  .wheel .GitHub__h3 {
+    left: 24vh;
+    top: -3.5vh;
+  }
+  .wheel .English__h3 {
+    left: 36vh;
+    top: -12.5vh;
+  }
+}
 @media only screen and (max-width: 1440px) {
-    .wheel .wheel__logo {
-        position: absolute;
-        left: 32vh;
-    }
-    .wheel .skillsWheel__h2 {
-        left: 52vh;
-    }
-    .wheel .HTML__logo {
-        left: 60vh;
-        top: 1.5vh;
-    }
-    .wheel .CSS__logo {
-        left: 69vh;
-        top: 5.5vh;
-    }
-    .wheel .Figma__logo {
-        left: 78vh;
-        top: 16vh;
-    }
-    .wheel .Jquery__logo {
-        left: 78vh;
-        top: 26vh;
-    }
-    .wheel .React__logo {
-        left: 74.5vh;
-        top: 36vh;
-    }
-    .wheel .API__logo {
-        left: 66.5vh;
-        top: 43.5vh;
-    }
-    .wheel .AXIOS__logo {
-        left: 55.5vh;
-        top: 45.5vh;
-    }
-    .wheel .Webpack__logo {
-        left: 44.5vh;
-        top: 42.5vh;
-    }
-    .wheel .Vue__logo {
-        left: 37vh;
-        top: 36vh;
-    }
-    .wheel .BEM__logo {
-        left: 34.5vh;
-        top: 27vh;
-    }
-    .wheel .JavaScript__logo {
-        left: 34.5vh;
-        top: 15vh;
-    }
-    .wheel .GitHub__logo {
-        left: 41.5vh;
-    }
-    .wheel .Engish__logo {
-        left: 50.5vh;
-    }
-    .wheel .line__html {
-        left: 66vh;
-        top: -11vh;
-    }
-    .wheel .line__css {
-        left: 77.5vh;
-        top: -2vh;
-    }
-    .wheel .line__figma {
-        left: 85vh;
-    }
-    .wheel .line__jquery {
-        left: 87vh;
-        top: 29.5vh;
-    }
-    .wheel .line__react {
-        left: 82.5vh;
-        top: 42.5vh;
-    }
-    .wheel .line__API {
-        left: 73vh;
-        top: 51.5vh;
-    }
-    .wheel .line__AXIOS {
-        left: 59vh;
-        top: 55.5vh;
-    }
-    .wheel .line__webpack {
-        left: 28vh;
-        top: 52vh;
-    }
-    .wheel .line__vue {
-        left: 12.5vh;
-        top: 42vh;
-    }
-    .wheel .line__BEM {
-        left: 13vh;
-        top: 31vh;
-    }
-    .wheel .line__javascript {
-        left: 13vh;
-        top: 12vh;
-    }
-    .wheel .line__github {
-        left: 23.5vh;
-    }
-    .wheel .line__english {
-        left: 41vh;
-        top: -11vh;
-    }
-    .wheel .HTML__h3 {
-        left: 79vh;
-        top: -12.5vh;
-        font-size: 18px;
-    }
-    .wheel .CSS__h3 {
-        left: 96vh;
-        top: -4.5vh;
-        font-size: 18px;
-    }
-    .wheel .Figma__h3 {
-        left: 106vh;
-        font-size: 18px;
-    }
-    .wheel .Jquery__h3 {
-        left: 106.5vh;
-        top: 29vh;
-        font-size: 18px;
-    }
-    .wheel .React__h3 {
-        left: 106vh;
-        top: 44vh;
-        font-size: 18px;
-    }
-    .wheel .API__h3 {
-        left: 92vh;
-        top: 60vh;
-        font-size: 18px;
-    }
-    .wheel .AXIOS__h3 {
-        left: 56vh;
-        top: 70vh;
-        font-size: 18px;
-    }
-    .wheel .Webpack_h3 {
-        left: 17vh;
-        top: 60.5vh;
-        font-size: 18px;
-    }
-    .wheel .Vue__h3 {
-        left: -12vh;
-        top: 45vh;
-        font-size: 18px;
-    }
-    .wheel .BEM__h3 {
-        left: 7vh;
-        top: 31vh;
-        font-size: 18px;
-    }
-    .wheel .JS__h3 {
-        left: -15vh;
-        top: 10.5vh;
-        font-size: 18px;
-    }
-    .wheel .GitHub__h3 {
-        left: 15vh;
-        top: -3.5vh;
-        font-size: 18px;
-    }
-    .wheel .English__h3 {
-            left: 30vh;
-            top: -12.5vh;
-            font-size: 18px;
-    }
-    }
+  .wheel .wheel__logo {
+    position: absolute;
+    left: 32vh;
+  }
+  .wheel .skillsWheel__h2 {
+    left: 52vh;
+  }
+  .wheel .HTML__logo {
+    left: 60vh;
+    top: 1.5vh;
+  }
+  .wheel .CSS__logo {
+    left: 69vh;
+    top: 5.5vh;
+  }
+  .wheel .Figma__logo {
+    left: 78vh;
+    top: 16vh;
+  }
+  .wheel .Jquery__logo {
+    left: 78vh;
+    top: 26vh;
+  }
+  .wheel .React__logo {
+    left: 74.5vh;
+    top: 36vh;
+  }
+  .wheel .API__logo {
+    left: 66.5vh;
+    top: 43.5vh;
+  }
+  .wheel .AXIOS__logo {
+    left: 55.5vh;
+    top: 45.5vh;
+  }
+  .wheel .Webpack__logo {
+    left: 44.5vh;
+    top: 42.5vh;
+  }
+  .wheel .Vue__logo {
+    left: 37vh;
+    top: 36vh;
+  }
+  .wheel .BEM__logo {
+    left: 34.5vh;
+    top: 27vh;
+  }
+  .wheel .JavaScript__logo {
+    left: 34.5vh;
+    top: 15vh;
+  }
+  .wheel .GitHub__logo {
+    left: 41.5vh;
+  }
+  .wheel .Engish__logo {
+    left: 50.5vh;
+  }
+  .wheel .line__html {
+    left: 66vh;
+    top: -11vh;
+  }
+  .wheel .line__css {
+    left: 77.5vh;
+    top: -2vh;
+  }
+  .wheel .line__figma {
+    left: 85vh;
+  }
+  .wheel .line__jquery {
+    left: 87vh;
+    top: 29.5vh;
+  }
+  .wheel .line__react {
+    left: 82.5vh;
+    top: 42.5vh;
+  }
+  .wheel .line__API {
+    left: 73vh;
+    top: 51.5vh;
+  }
+  .wheel .line__AXIOS {
+    left: 59vh;
+    top: 55.5vh;
+  }
+  .wheel .line__webpack {
+    left: 28vh;
+    top: 52vh;
+  }
+  .wheel .line__vue {
+    left: 12.5vh;
+    top: 42vh;
+  }
+  .wheel .line__BEM {
+    left: 13vh;
+    top: 31vh;
+  }
+  .wheel .line__javascript {
+    left: 13vh;
+    top: 12vh;
+  }
+  .wheel .line__github {
+    left: 23.5vh;
+  }
+  .wheel .line__english {
+    left: 41vh;
+    top: -11vh;
+  }
+  .wheel .HTML__h3 {
+    left: 79vh;
+    top: -12.5vh;
+    font-size: 18px;
+  }
+  .wheel .CSS__h3 {
+    left: 96vh;
+    top: -4.5vh;
+    font-size: 18px;
+  }
+  .wheel .Figma__h3 {
+    left: 106vh;
+    font-size: 18px;
+  }
+  .wheel .Jquery__h3 {
+    left: 106.5vh;
+    top: 29vh;
+    font-size: 18px;
+  }
+  .wheel .React__h3 {
+    left: 106vh;
+    top: 44vh;
+    font-size: 18px;
+  }
+  .wheel .API__h3 {
+    left: 92vh;
+    top: 60vh;
+    font-size: 18px;
+  }
+  .wheel .AXIOS__h3 {
+    left: 56vh;
+    top: 70vh;
+    font-size: 18px;
+  }
+  .wheel .Webpack_h3 {
+    left: 17vh;
+    top: 60.5vh;
+    font-size: 18px;
+  }
+  .wheel .Vue__h3 {
+    left: -12vh;
+    top: 45vh;
+    font-size: 18px;
+  }
+  .wheel .BEM__h3 {
+    left: 7vh;
+    top: 31vh;
+    font-size: 18px;
+  }
+  .wheel .JS__h3 {
+    left: -15vh;
+    top: 10.5vh;
+    font-size: 18px;
+  }
+  .wheel .GitHub__h3 {
+    left: 15vh;
+    top: -3.5vh;
+    font-size: 18px;
+  }
+  .wheel .English__h3 {
+    left: 30vh;
+    top: -12.5vh;
+    font-size: 18px;
+  }
+}
 @media only screen and (max-width: 1366px) {
-    .wheel .JS__h3 {
-        left: -14vh;
-        top: 10.5vh;
-        font-size: 18px;
-    }
-    .Figma__logo {
-        left: 78vh;
-        top: 16vh;
-    }
-    .Jquery__logo {
-        left: 78vh;
-        top: 26vh;
-    }
-    .wheel .React__logo {
-        left: 74.5vh;
-        top: 36vh;
-    }
-    .wheel .API__logo {
-        left: 66.5vh;
-        top: 43.5vh;
-    }
-    .wheel .Jquery__logo {
-        left: 78vh;
-        top: 26.5vh;
-    }
-    }
+  .wheel .JS__h3 {
+    left: -14vh;
+    top: 10.5vh;
+    font-size: 18px;
+  }
+  .Figma__logo {
+    left: 78vh;
+    top: 16vh;
+  }
+  .Jquery__logo {
+    left: 78vh;
+    top: 26vh;
+  }
+  .wheel .React__logo {
+    left: 74.5vh;
+    top: 36vh;
+  }
+  .wheel .API__logo {
+    left: 66.5vh;
+    top: 43.5vh;
+  }
+  .wheel .Jquery__logo {
+    left: 78vh;
+    top: 26.5vh;
+  }
+}
 @media only screen and (max-width: 1024px) {
-    .wheel .wheel__logo {
-        position: absolute;
-        left: 16vh;
-    }
-    .wheel .skillsWheel__h2 {
-        left: 36vh;
-    }
-    .wheel .HTML__logo {
-        left: 44vh;
-        top: 1.5vh;
-    }
-    .wheel .CSS__logo {
-        left: 53vh;
-        top: 5.5vh;
-    }
-    .wheel .Figma__logo {
-        left: 61vh;
-        top: 15vh;
-    }
-    .wheel .Jquery__logo {
-        left: 62vh;
-        top: 26vh;
-    }
-    .wheel .React__logo {
-        left: 58.5vh;
-        top: 36vh;
-    }
-    .wheel .API__logo {
-        left: 50.5vh;
-        top: 41.5vh;
-    }
-    .wheel .AXIOS__logo {
-        left: 49.5vh;
-        top: 45.5vh;
-    }
-    .wheel .Webpack__logo {
-        left: 28.5vh;
-        top: 42.5vh;
-    }
-    .wheel .Vue__logo {
-        left: 21vh;
-        top: 36vh;
-    }
-    .wheel .BEM__logo {
-        left: 34.5vh;
-        top: 27vh;
-    }
-    .wheel .JavaScript__logo {
-        left: 18.5vh;
-        top: 15vh;
-    }
-    .wheel .GitHub__logo {
-        left: 25.5vh;
-    }
-    .wheel .Engish__logo {
-        left: 34.5vh;
-    }
-    .wheel .Figma__logo {
-        left: 62vh;
-        top: 16vh;
-    }
-    .wheel .BEM__logo {
-        left: 18.5vh;
-        top: 27vh;
-    }
-    .wheel .API__logo {
-        left: 50.5vh;
-        top: 43.5vh;
-    }
-    .wheel .AXIOS__logo {
-        left: 39.5vh;
-        top: 45.5vh;
-    }
-    .wheel .line__html {
+  .wheel .wheel__logo {
+    position: absolute;
+    left: 16vh;
+  }
+  .wheel .skillsWheel__h2 {
+    left: 36vh;
+  }
+  .wheel .HTML__logo {
+    left: 44vh;
+    top: 1.5vh;
+  }
+  .wheel .CSS__logo {
+    left: 53vh;
+    top: 5.5vh;
+  }
+  .wheel .Figma__logo {
+    left: 61vh;
+    top: 15vh;
+  }
+  .wheel .Jquery__logo {
+    left: 62vh;
+    top: 26vh;
+  }
+  .wheel .React__logo {
+    left: 58.5vh;
+    top: 36vh;
+  }
+  .wheel .API__logo {
+    left: 50.5vh;
+    top: 41.5vh;
+  }
+  .wheel .AXIOS__logo {
+    left: 49.5vh;
+    top: 45.5vh;
+  }
+  .wheel .Webpack__logo {
+    left: 28.5vh;
+    top: 42.5vh;
+  }
+  .wheel .Vue__logo {
+    left: 21vh;
+    top: 36vh;
+  }
+  .wheel .BEM__logo {
+    left: 34.5vh;
+    top: 27vh;
+  }
+  .wheel .JavaScript__logo {
+    left: 18.5vh;
+    top: 15vh;
+  }
+  .wheel .GitHub__logo {
+    left: 25.5vh;
+  }
+  .wheel .Engish__logo {
+    left: 34.5vh;
+  }
+  .wheel .Figma__logo {
+    left: 62vh;
+    top: 16vh;
+  }
+  .wheel .BEM__logo {
+    left: 18.5vh;
+    top: 27vh;
+  }
+  .wheel .API__logo {
+    left: 50.5vh;
+    top: 43.5vh;
+  }
+  .wheel .AXIOS__logo {
+    left: 39.5vh;
+    top: 45.5vh;
+  }
+  .wheel .line__html {
     display: none;
-    }
-    .wheel .line__css {
-        display: none;
-    }
-    .wheel .line__figma {
-        display: none;
-    }
-    .wheel .line__jquery {
-        display: none;
-    }
-    .wheel .line__react {
-        display: none;
-    }
-    .wheel .line__API {
-        display: none;
-    }
-    .wheel .line__AXIOS {
-        display: none;
-    }
-    .wheel .line__webpack {
-        display: none;
-    }
-    .wheel .line__vue {
-        display: none;
-    }
-    .wheel .line__BEM {
-        display: none;
-    }
-    .wheel .line__javascript {
-        display: none;
-    }
-    .wheel .line__github {
-        display: none;
-    }
-    .wheel .line__english {
-        display: none;
-    }
-    .wheel .HTML__h3 {
-        display: none;
-    }
-    .wheel .CSS__h3 {
-        display: none;
-    }
-    .wheel .Figma__h3 {
-        display: none;
-    }
-    .wheel .Jquery__h3 {
-        display: none;
-    }
-    .wheel .React__h3 {
-        display: none;
-    }
-    .wheel .API__h3 {
-        display: none;
-    }
-    .wheel .AXIOS__h3 {
-        display: none;
-    }
-    .wheel .Webpack_h3 {
-        display: none;
-    }
-    .wheel .Vue__h3 {
-        display: none;
-    }
-    .wheel .BEM__h3 {
-        display: none;
-    }
-    .wheel .JS__h3 {
-        display: none;
-    }
-    .wheel .GitHub__h3 {
-        display: none;
-    }
-    .wheel .English__h3 {
-        display: none;
-    }
-    }
+  }
+  .wheel .line__css {
+    display: none;
+  }
+  .wheel .line__figma {
+    display: none;
+  }
+  .wheel .line__jquery {
+    display: none;
+  }
+  .wheel .line__react {
+    display: none;
+  }
+  .wheel .line__API {
+    display: none;
+  }
+  .wheel .line__AXIOS {
+    display: none;
+  }
+  .wheel .line__webpack {
+    display: none;
+  }
+  .wheel .line__vue {
+    display: none;
+  }
+  .wheel .line__BEM {
+    display: none;
+  }
+  .wheel .line__javascript {
+    display: none;
+  }
+  .wheel .line__github {
+    display: none;
+  }
+  .wheel .line__english {
+    display: none;
+  }
+  .wheel .HTML__h3 {
+    display: none;
+  }
+  .wheel .CSS__h3 {
+    display: none;
+  }
+  .wheel .Figma__h3 {
+    display: none;
+  }
+  .wheel .Jquery__h3 {
+    display: none;
+  }
+  .wheel .React__h3 {
+    display: none;
+  }
+  .wheel .API__h3 {
+    display: none;
+  }
+  .wheel .AXIOS__h3 {
+    display: none;
+  }
+  .wheel .Webpack_h3 {
+    display: none;
+  }
+  .wheel .Vue__h3 {
+    display: none;
+  }
+  .wheel .BEM__h3 {
+    display: none;
+  }
+  .wheel .JS__h3 {
+    display: none;
+  }
+  .wheel .GitHub__h3 {
+    display: none;
+  }
+  .wheel .English__h3 {
+    display: none;
+  }
+}
 @media only screen and (max-width: 768px) {
-    .wheel .wheel__logo {
-        left: 13vh;
-    }
-    .wheel .skillsWheel__h2 {
-        left: 33vh;
-    }
-    .wheel .Engish__logo {
-        left: 31.5vh;
-    }
-    .wheel .HTML__logo {
-        left: 42vh;
-    }
-    .wheel .CSS__logo {
-        left: 51vh;
-    }
-    .wheel .Figma__logo {
-        left: 59vh;
-    }
-    .wheel .Jquery__logo {
-        left: 59vh;
-    }
-    .wheel .React__logo {
-        left: 55.5vh;
-    }
-    .wheel .API__logo {
-        left: 47.5vh;
-    }
-    .wheel .AXIOS__logo {
-        left: 36.5vh;
-    }
-    .wheel .Webpack__logo {
-        left: 25.5vh;
-    }
-    .wheel .Vue__logo {
-        left: 18.5vh;
-    }
-    .wheel .Vue__logo {
-        left: 17.5vh;
-    }
-    .wheel .BEM__logo {
-        left: 15.5vh;
-    }
-    .wheel .JavaScript__logo {
-        left: 15.5vh;
-    }
-    .wheel .GitHub__logo {
-        left: 22.5vh;
-    }
-    }
+  .wheel .wheel__logo {
+    left: 13vh;
+  }
+  .wheel .skillsWheel__h2 {
+    left: 33vh;
+  }
+  .wheel .Engish__logo {
+    left: 31.5vh;
+  }
+  .wheel .HTML__logo {
+    left: 42vh;
+  }
+  .wheel .CSS__logo {
+    left: 51vh;
+  }
+  .wheel .Figma__logo {
+    left: 59vh;
+  }
+  .wheel .Jquery__logo {
+    left: 59vh;
+  }
+  .wheel .React__logo {
+    left: 55.5vh;
+  }
+  .wheel .API__logo {
+    left: 47.5vh;
+  }
+  .wheel .AXIOS__logo {
+    left: 36.5vh;
+  }
+  .wheel .Webpack__logo {
+    left: 25.5vh;
+  }
+  .wheel .Vue__logo {
+    left: 18.5vh;
+  }
+  .wheel .Vue__logo {
+    left: 17.5vh;
+  }
+  .wheel .BEM__logo {
+    left: 15.5vh;
+  }
+  .wheel .JavaScript__logo {
+    left: 15.5vh;
+  }
+  .wheel .GitHub__logo {
+    left: 22.5vh;
+  }
+}
 @media only screen and (max-width: 414px) {
-    .wheel {
-        display: none;
-    }
-    .wheel__mobile {
-        display: block;
-        margin: 0 auto;
-    }
+  .wheel {
+    display: none;
+  }
+  .wheel__mobile {
+    display: block;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 360px) {
-    .wheel {
-        display: none;
-    }
-    .wheel__mobile {
-        display: block;
-        margin: 0 auto;
-    }
-    }
+  .wheel {
+    display: none;
+  }
+  .wheel__mobile {
+    display: block;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 320px) {
-    /* стили */
-    }
+  /* стили */
+}

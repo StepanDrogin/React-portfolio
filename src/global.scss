@@ -1,95 +1,95 @@
 $mainColor: #252934;
-$white: #FFFFFF;
-$green: #4AA200;
-$grayFirst: #C2C2C2;
-$graySecond:#D2D2D2;
+$white: #ffffff;
+$green: #4aa200;
+$grayFirst: #c2c2c2;
+$graySecond: #d2d2d2;
 
-$font-stack: 'Raleway', sans-serif;
+$font-stack: "Raleway", sans-serif;
 
 %font-header {
-    font-family: $font-stack;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 18,78px;
+  font-family: $font-stack;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18, 78px;
 }
 %font-p {
-    font-family: $font-stack;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
 }
 %font-h1 {
-    font-family: $font-stack;
-    font-size: 62px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 73px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 73px;
+  letter-spacing: 0em;
 }
 %font-h1-thick {
-    font-family: $font-stack;
-    font-size: 62px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 73px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 62px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 73px;
+  letter-spacing: 0em;
 }
 %font-h2 {
-    font-family: $font-stack;
-    font-size: 52px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 61px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 61px;
+  letter-spacing: 0em;
 }
 %font-p-skills {
-    font-family: $font-stack;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 28px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
 }
 %font-h2-skills {
-    font-family: $font-stack;
-    font-size: 55px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 65px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 55px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
 }
 %font-skills-h3 {
-    font-family: $font-stack;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 28px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
 }
 %font-skills-p {
-    font-family: $font-stack;
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
 }
 %font-works-p {
-    font-family: $font-stack;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
 }
 %font-h4 {
-    font-family: $font-stack;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 33px;
-    letter-spacing: 0em;
+  font-family: $font-stack;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
 }

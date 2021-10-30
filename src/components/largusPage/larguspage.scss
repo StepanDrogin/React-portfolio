@@ -1,120 +1,121 @@
 @import "../../global.scss";
 
 .page__h3 {
-    @extend %font-h4;
-    color: $white;
-    margin-top: 140px;
-    margin-bottom: 30px;
+  @extend %font-h4;
+  color: $white;
+  margin-top: 140px;
+  margin-bottom: 30px;
 }
 .pages {
-    display: flex;
-    justify-content: space-between;
-.page__left {
+  display: flex;
+  justify-content: space-between;
+  .page__left {
     .page__p {
-        @extend %font-skills-p;
-        color: $white;
-        margin-bottom: 46px;
-        text-align: left;
-        max-width: 458px;
+      @extend %font-skills-p;
+      color: $white;
+      margin-bottom: 46px;
+      text-align: left;
+      max-width: 458px;
     }
-}
-.page__right {
+  }
+  .page__right {
     .page__image-front {
-        position: absolute;
-        margin-top: 340px;
-        margin-left: 40px;
+      position: absolute;
+      margin-top: 340px;
+      margin-left: 40px;
     }
     .page__imane-back {
-        position: relative;
+      position: relative;
     }
-}
+  }
 }
 .page__icon {
-    padding: 0px 10px 0px 0px;
-    margin-bottom: 550px;
+  padding: 0px 10px 0px 0px;
+  margin-bottom: 550px;
 }
 .page__h2 {
-    @extend %font-h2;
-    color: $white;
-    margin-bottom: 60px;
+  @extend %font-h2;
+  color: $white;
+  margin-bottom: 60px;
 }
 .page__cards {
-    display: flex;
-    .page__card {
-        margin: 0px 15px 221px 0px;
-        .card__name {
-            @extend %font-p;
-            color: $white;
-            margin-top: 15px;
-        }
+  display: flex;
+  .page__card {
+    margin: 0px 15px 221px 0px;
+    .card__name {
+      @extend %font-p;
+      color: $white;
+      margin-top: 15px;
     }
+  }
 }
 @media only screen and (max-width: 1600px) {
-.page__right {
+  .page__right {
     margin-left: 25px;
-}
-.page__cards .page__card {
+  }
+  .page__cards .page__card {
     margin: 0px auto 215px 0px;
-}
-.page__card-img {
+  }
+  .page__card-img {
     width: 390px;
     height: 350px;
-}
+  }
 }
 @media only screen and (max-width: 1440px) {
-    .page__card-img {
-        width: 98%;
-        height: 100%;
-    }
+  .page__card-img {
+    width: 98%;
+    height: 100%;
+  }
 }
-@media only screen and (max-width: 1366px) {}
+@media only screen and (max-width: 1366px) {
+}
 @media only screen and (max-width: 1024px) {
-    .pages {
-        flex-direction: column;
-    }
-    .page__icon {
-        margin-bottom: 80px;
-    }
-    .page__h2 {
-        margin-top: 250px;
-    }
-    .page__left {
-        display: flex;
-        justify-content: space-between;
-    }
+  .pages {
+    flex-direction: column;
+  }
+  .page__icon {
+    margin-bottom: 80px;
+  }
+  .page__h2 {
+    margin-top: 250px;
+  }
+  .page__left {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media only screen and (max-width: 768px) {
-    .page__image-back {
-        height: 35vh;
-        width: 35vh;
-    }
-    .page__image-front {
-        display: none;
-    }
-    .page__h2 {
-        margin-top: 175px;
-    }
-    .page__left {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-    }
-    .page__right {
-        margin: 0 auto;
-    }
+  .page__image-back {
+    height: 35vh;
+    width: 35vh;
+  }
+  .page__image-front {
+    display: none;
+  }
+  .page__h2 {
+    margin-top: 175px;
+  }
+  .page__left {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .page__right {
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 360px) {
-    .page__cards {
-        display: flex;
-        flex-direction: column;
-    }
-    .page__cards .page__card {
-        margin: 0px auto 15px 0px;
-    }
+  .page__cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .page__cards .page__card {
+    margin: 0px auto 15px 0px;
+  }
 }
 @media only screen and (max-width: 320px) {
-    .page__image-back {
-        height: 32vh;
-        width: 32vh;
-    }
+  .page__image-back {
+    height: 32vh;
+    width: 32vh;
+  }
 }

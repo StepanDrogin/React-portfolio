@@ -1,91 +1,91 @@
 @import "../../global.scss";
 
 .softskills {
-    margin-top: 107vh;
-    margin-bottom: 220px;
-    .softskills__h2 {
-        text-align: center;
-        @extend %font-h2;
-        color: $white;
+  margin-top: 107vh;
+  margin-bottom: 220px;
+  .softskills__h2 {
+    text-align: center;
+    @extend %font-h2;
+    color: $white;
+  }
+  .softskills__items {
+    display: flex;
+    justify-content: center;
+    .softskills__item {
+      background-color: $white;
+      padding: 25px 70px 50px 28px;
+      margin: 60px 15px 0px 15px;
+      width: 458px;
+      height: 250px;
+      .softskills__item_p {
+        max-width: 360px;
+        @extend %font-skills-p;
+      }
+      .softskills__item_h3 {
+        margin-top: 24px;
+        margin-bottom: 12px;
+        @extend %font-skills-h3;
+      }
     }
-    .softskills__items {
-        display: flex;
-        justify-content: center;
-        .softskills__item {
-            background-color: $white;
-            padding: 25px 70px 50px 28px;
-            margin: 60px 15px 0px 15px;
-            width: 458px;
-            height: 250px;
-            .softskills__item_p {
-                max-width: 360px;
-                @extend %font-skills-p;
-            }
-            .softskills__item_h3 {
-                margin-top: 24px;
-                margin-bottom: 12px;
-                @extend %font-skills-h3;
-            }
-        }
-    }
+  }
 }
 
 @media only screen and (max-width: 1440px) {
-    .softskills .softskills__items .softskills__item {
-        height: 320px;
-    }
+  .softskills .softskills__items .softskills__item {
+    height: 320px;
+  }
 }
-@media only screen and  (max-width:1366px) {
-    .softskills .softskills__items .softskills__item {
-        height: 340px;
-    }
+@media only screen and (max-width: 1366px) {
+  .softskills .softskills__items .softskills__item {
+    height: 340px;
+  }
 }
-@media only screen and  (max-width:1024px) {
-    .softskills .softskills__items .softskills__item {
-        height: 570px;
-    }
+@media only screen and (max-width: 1024px) {
+  .softskills .softskills__items .softskills__item {
+    height: 570px;
+  }
 }
-@media only screen and  (max-width:768px) {
-    .softskills .softskills__items {
-        flex-direction: column;
-    }
-    .softskills .softskills__items .softskills__item {
-        height: 30vh !important;
-        width: 45vh;
-        text-align: center;
-        padding: 32px;
-        margin: 2vh;
-        margin-left: 15vh;
-    }
-    .softskills .softskills__h2 {
-        margin-left: 4vh;
-        margin-bottom: 10vh;
-    }
+@media only screen and (max-width: 768px) {
+  .softskills .softskills__items {
+    flex-direction: column;
+  }
+  .softskills .softskills__items .softskills__item {
+    height: 30vh !important;
+    width: 45vh;
+    text-align: center;
+    padding: 32px;
+    margin: 2vh;
+    margin-left: 15vh;
+  }
+  .softskills .softskills__h2 {
+    margin-left: 4vh;
+    margin-bottom: 10vh;
+  }
 }
-@media only screen and  (max-width:414px) {
-    .softskills {
-        margin-top: 15vh;
-    }
-    .softskills .softskills__items .softskills__item {
-        margin-left: 0vh;
-        width: 39vh;
-        height: 45vh !important;
-    }
-    .softskills .softskills__h2 {
-      margin: 45px auto;
-    }
+@media only screen and (max-width: 414px) {
+  .softskills {
+    margin-top: 15vh;
+  }
+  .softskills .softskills__items .softskills__item {
+    margin-left: 0vh;
+    width: 39vh;
+    height: 45vh !important;
+  }
+  .softskills .softskills__h2 {
+    margin: 45px auto;
+  }
 }
-@media only screen and  (max-width:360px) {
-    .softskills {
-        margin-top: 13vh;
-        margin-bottom: 100px;
-    }
-    .softskills .softskills__items .softskills__item {
-        width: 25vh;
-        margin: 10px auto;
-        height: 40vh !important;
-    }
-    .softskills .softskills__h2 {
-        margin: 55px auto;
-    }
+@media only screen and (max-width: 360px) {
+  .softskills {
+    margin-top: 13vh;
+    margin-bottom: 100px;
+  }
+  .softskills .softskills__items .softskills__item {
+    width: 25vh;
+    margin: 10px auto;
+    height: 40vh !important;
+  }
+  .softskills .softskills__h2 {
+    margin: 55px auto;
+  }
 }

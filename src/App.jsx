@@ -1,9 +1,5 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import './App.scss';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import "./App.scss";
 import Footer from "./components/footer/Footer";
 import HomePage from "./components/homePage/HomePage";
 import LargusPage from "./components/largusPage/LargusPage";
@@ -15,9 +11,9 @@ import Navbar from "./components/navbar/Navbar";
 function App() {
   return (
     <Router>
-    <div>
-    <Navbar></Navbar>
-    <Switch>
+      <div>
+        <Navbar></Navbar>
+        <Switch>
           <Route path="/" exact>
             <HomePage />
           </Route>
@@ -34,9 +30,9 @@ function App() {
             <WeatherPage />
           </Route>
         </Switch>
-    <Footer></Footer>
-    </div>
-  </Router>
+        <Footer></Footer>
+      </div>
+    </Router>
   );
 }
 

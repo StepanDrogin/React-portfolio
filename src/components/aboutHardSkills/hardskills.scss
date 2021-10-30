@@ -1,38 +1,38 @@
 @import "../../global.scss";
 
 .hardskills {
-    display: flex;
-    flex-direction: column;
-    margin-top: 350px;
-    width: 750px;
-    margin-bottom: 223px;
-    .hardskills__h3 {
-        color: $white;
-        padding-bottom: 5px;
-        @extend %font-works-p;
+  display: flex;
+  flex-direction: column;
+  margin-top: 350px;
+  width: 750px;
+  margin-bottom: 223px;
+  .hardskills__h3 {
+    color: $white;
+    padding-bottom: 5px;
+    @extend %font-works-p;
+  }
+  .hardskills__h2 {
+    color: $white;
+    @extend %font-h2;
+    padding-bottom: 25px;
+    .ampersand {
+      color: $green;
     }
-        .hardskills__h2 {
-            color: $white;
-            @extend %font-h2;
-            padding-bottom: 25px;
-            .ampersand {
-                color: $green;
-            }
-        }
-            .hardskills__p {
-                @extend %font-works-p;
-                color: $grayFirst;
-            }
+  }
+  .hardskills__p {
+    @extend %font-works-p;
+    color: $grayFirst;
+  }
 }
-@media only screen and  (max-width:768px) {
-    .hardskills {
-        text-align: center;
-        width: 100%;
-    }    
+@media only screen and (max-width: 768px) {
+  .hardskills {
+    text-align: center;
+    width: 100%;
+  }
 }
-@media only screen and  (max-width:360px) {
-    .hardskills {
-        margin-bottom: 100px;
-        margin-top: 20vh;
-    }  
+@media only screen and (max-width: 360px) {
+  .hardskills {
+    margin-bottom: 100px;
+    margin-top: 20vh;
+  }
 }

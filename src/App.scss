@@ -1,16 +1,16 @@
 @import "./global.scss";
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background-color: $mainColor;
+  background-color: $mainColor;
 }
 .container {
-    max-width: 75%;
-    margin: auto;
+  max-width: 75%;
+  margin: auto;
 }

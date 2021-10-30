@@ -1,39 +1,57 @@
 import { Link } from "react-router-dom";
 import "../navbar/navbar.scss";
-import { slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from "react-burger-menu";
 
 export default function Navbar() {
-    return (
-        <div className="container">
-        <div className="navbar">
+  return (
+    <div className="container">
+      <div className="navbar">
         <div className="navbar__left">
-        <a href="mailto:drogenko.stepan@yandex.ru" className="navbar__mail">drogenko.stepan@yandex.ru</a>
+          <a href="mailto:drogenko.stepan@yandex.ru" className="navbar__mail">
+            drogenko.stepan@yandex.ru
+          </a>
         </div>
         <Menu right noOverlay>
-        <Link to='/'>
-                {/* eslint-disable-next-line */}
-        <span href="#" className="navbar__right-item main__page">Main page</span>
-        </Link>
-        {/* eslint-disable-next-line */}
-            <a href="#about" className="navbar__right-item">About me</a>
-                    {/* eslint-disable-next-line */}
-            <a href="#work" className="navbar__right-item">My works</a>
-                    {/* eslint-disable-next-line */}
-            <a href="#footer" className="navbar__right-item">Contact</a>
-      </Menu>
+          <Link to="/">
+            {/* eslint-disable-next-line */}
+            <span href="#" className="navbar__right-item main__page">
+              Main page
+            </span>
+          </Link>
+          {/* eslint-disable-next-line */}
+          <a href="#about" className="navbar__right-item">
+            About me
+          </a>
+          {/* eslint-disable-next-line */}
+          <a href="#work" className="navbar__right-item">
+            My works
+          </a>
+          {/* eslint-disable-next-line */}
+          <a href="#footer" className="navbar__right-item">
+            Contact
+          </a>
+        </Menu>
         <div className="navbar__right">
-                <Link to='/'>
-                {/* eslint-disable-next-line */}
-        <span href="#" className="navbar__right-item main__page">Main page</span>
-        </Link>
-        {/* eslint-disable-next-line */}
-            <a href="#about" className="navbar__right-item">About me</a>
-                    {/* eslint-disable-next-line */}
-            <a href="#work" className="navbar__right-item">My works</a>
-                    {/* eslint-disable-next-line */}
-            <a href="#footer" className="navbar__right-item">Contact</a>
+          <Link to="/">
+            {/* eslint-disable-next-line */}
+            <span href="#" className="navbar__right-item main__page">
+              Main page
+            </span>
+          </Link>
+          {/* eslint-disable-next-line */}
+          <a href="#about" className="navbar__right-item">
+            About me
+          </a>
+          {/* eslint-disable-next-line */}
+          <a href="#work" className="navbar__right-item">
+            My works
+          </a>
+          {/* eslint-disable-next-line */}
+          <a href="#footer" className="navbar__right-item">
+            Contact
+          </a>
         </div>
-        </div>
-        </div>
-    )
-};
+      </div>
+    </div>
+  );
+}
