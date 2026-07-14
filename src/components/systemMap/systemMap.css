@@ -1,0 +1,220 @@
+.system-map {
+  position: relative;
+  min-height: 520px;
+  border: 1px solid rgba(203, 255, 252, 0.12);
+  border-radius: var(--radius-cards);
+  background: rgba(0, 55, 52, 0.45);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.system-map:not(.is-ambient-active) *,
+.system-map:not(.is-ambient-active) *::before,
+.system-map:not(.is-ambient-active) *::after {
+  animation-play-state: paused;
+}
+
+.system-map::before {
+  content: "";
+  position: absolute;
+  inset: 8%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 130, 124, 0.2),
+    transparent 66%
+  );
+  filter: blur(28px);
+  animation: system-map-glow 9s var(--motion-ease-in-out) infinite;
+}
+
+.system-map__grid {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(
+      rgba(203, 255, 252, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(203, 255, 252, 0.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+  mask-image: linear-gradient(black, transparent 92%);
+}
+
+.system-map__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.system-map__path,
+.system-map__orbit {
+  stroke: rgba(203, 255, 252, 0.24);
+  stroke-width: 1;
+  stroke-dasharray: 0.025 0.035;
+  animation: system-map-flow 5s linear infinite;
+}
+
+.system-map__orbit {
+  stroke: rgba(250, 209, 255, 0.22);
+  stroke-dasharray: 0.01 0.026;
+  animation-duration: 8s;
+  animation-direction: reverse;
+}
+
+.system-map__core circle:first-child {
+  fill: rgba(0, 130, 124, 0.1);
+  stroke: rgba(203, 255, 252, 0.24);
+  stroke-dasharray: 3 8;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: system-map-rotate 18s linear infinite;
+}
+
+.system-map__core circle:nth-child(2) {
+  fill: var(--color-liquid-deep);
+  stroke: rgba(250, 209, 255, 0.3);
+}
+
+.system-map__core text {
+  fill: var(--color-platinum);
+  font-family: var(--font-matter);
+  font-size: 34px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.04em;
+}
+
+.system-map__core .system-map__core-caption {
+  fill: var(--color-silver-mist);
+  font-size: 9px;
+  font-weight: var(--font-weight-regular);
+  letter-spacing: 0.16em;
+}
+
+.system-map__node {
+  animation: system-map-node-float 4.2s var(--motion-ease-in-out) infinite
+    alternate;
+  animation-delay: var(--node-delay);
+}
+
+.system-map__node text {
+  fill: var(--color-silver-mist);
+  font-family: var(--font-arial);
+  font-size: 9px;
+  letter-spacing: 0.13em;
+}
+
+.system-map__node-pulse {
+  fill: rgba(203, 255, 252, 0.025);
+  stroke: rgba(203, 255, 252, 0.16);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: system-map-pulse 2.8s var(--motion-ease-in-out) infinite;
+  animation-delay: var(--pulse-delay);
+}
+
+.system-map__node-dot {
+  fill: var(--color-liquid-mist);
+}
+
+.system-map__node--teal .system-map__node-dot {
+  fill: var(--color-bioluminescent-gradient);
+}
+
+.system-map__node--lavender .system-map__node-dot {
+  fill: var(--color-lavender-phosphor);
+}
+
+.system-map__status {
+  position: absolute;
+  right: var(--spacing-20);
+  bottom: var(--spacing-20);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid rgba(203, 255, 252, 0.12);
+  border-radius: var(--radius-small);
+  background: rgba(1, 29, 28, 0.82);
+}
+
+.system-map__status-dot {
+  width: 6px;
+  height: 6px;
+  display: block;
+  border-radius: 50%;
+  background: var(--color-aurora-gradient);
+  animation: system-map-status 1.8s var(--motion-ease-in-out) infinite;
+}
+
+.system-map__status-text {
+  color: var(--color-liquid-mist);
+  font-size: 9px;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+@keyframes system-map-flow {
+  to {
+    stroke-dashoffset: -1;
+  }
+}
+
+@keyframes system-map-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes system-map-node-float {
+  to {
+    translate: 0 -5px;
+  }
+}
+
+@keyframes system-map-pulse {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(0.84);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+}
+
+@keyframes system-map-glow {
+  0%,
+  100% {
+    opacity: 0.5;
+    transform: scale(0.92);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes system-map-status {
+  50% {
+    opacity: 0.35;
+    transform: scale(0.72);
+  }
+}
+
+@media (max-width: 720px) {
+  .system-map {
+    min-height: 390px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .system-map *,
+  .system-map::before {
+    animation: none;
+  }
+}

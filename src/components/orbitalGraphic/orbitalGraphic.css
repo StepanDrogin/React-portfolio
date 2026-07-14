@@ -1,0 +1,275 @@
+.orbital-graphic {
+  --orbital-abyss: var(--color-liquid-abyss, #012624);
+  --orbital-kelp: var(--color-liquid-kelp, #003734);
+  --orbital-teal: var(--color-bioluminescent-gradient, #00827c);
+  --orbital-aqua: var(--color-aurora-gradient, #cbfffc);
+  --orbital-mist: var(--color-liquid-mist, #edfffe);
+  --orbital-platinum: var(--color-platinum, #ffffff);
+  --orbital-lavender: var(--color-lavender-phosphor, #fde9ff);
+  --orbital-x: 0px;
+  --orbital-y: 0px;
+  --orbital-rotate-x: 0deg;
+  --orbital-rotate-y: 0deg;
+
+  position: relative;
+  width: clamp(18rem, 44vw, 42rem);
+  max-width: 100%;
+  aspect-ratio: 1;
+  perspective: 900px;
+  pointer-events: auto;
+  user-select: none;
+  isolation: isolate;
+}
+
+.orbital-graphic__halo,
+.orbital-graphic__scan {
+  position: absolute;
+  pointer-events: none;
+}
+
+.orbital-graphic__halo {
+  inset: 13%;
+  border: 1px solid rgba(203, 255, 252, 0.08);
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(0, 130, 124, 0.18),
+    rgba(0, 55, 52, 0.06) 52%,
+    transparent 72%
+  );
+  filter: blur(2px);
+  animation: orbital-graphic-breathe 8s var(--motion-ease-in-out) infinite;
+}
+
+.orbital-graphic__scan {
+  top: 13%;
+  right: 16%;
+  bottom: 13%;
+  left: 16%;
+  z-index: 2;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(203, 255, 252, 0.03) 46%,
+    rgba(203, 255, 252, 0.34) 50%,
+    rgba(203, 255, 252, 0.03) 54%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(circle, black 58%, transparent 72%);
+  opacity: 0.52;
+  animation: orbital-graphic-scan 6.5s linear infinite;
+}
+
+.orbital-graphic__svg {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  transform: translate3d(var(--orbital-x), var(--orbital-y), 0)
+    rotateX(var(--orbital-rotate-x)) rotateY(var(--orbital-rotate-y));
+  transition: transform 420ms var(--motion-ease-out);
+  will-change: transform;
+}
+
+.orbital-graphic__core {
+  fill: var(--orbital-kelp);
+  fill-opacity: 0.08;
+  stroke: var(--orbital-teal);
+  stroke-width: 1;
+  stroke-opacity: 0.16;
+}
+
+.orbital-graphic__rings,
+.orbital-graphic__particles,
+.orbital-graphic__network {
+  transform-box: view-box;
+  transform-origin: center;
+}
+
+.orbital-graphic__rings--slow {
+  animation: orbital-graphic-spin 31s linear infinite;
+}
+
+.orbital-graphic__rings--reverse {
+  animation: orbital-graphic-spin-reverse 38s linear infinite;
+}
+
+.orbital-graphic__particles {
+  animation: orbital-graphic-drift 26s ease-in-out infinite alternate;
+}
+
+.orbital-graphic__ring {
+  stroke: var(--orbital-aqua);
+  stroke-width: 1.35;
+  stroke-linecap: round;
+  stroke-dasharray: 0.5 4.5;
+  stroke-opacity: 0.35;
+}
+
+.orbital-graphic__ring--outer {
+  stroke: var(--orbital-teal);
+  stroke-dasharray: 0.5 3.2;
+  stroke-opacity: 0.5;
+}
+
+.orbital-graphic__ring--muted {
+  stroke-opacity: 0.18;
+}
+
+.orbital-graphic__particle {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation-name: orbital-graphic-pulse;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.orbital-graphic__particle--teal {
+  fill: var(--orbital-teal);
+}
+
+.orbital-graphic__particle--mist {
+  fill: var(--orbital-mist);
+}
+
+.orbital-graphic__particle--platinum {
+  fill: var(--orbital-platinum);
+}
+
+.orbital-graphic__particle--lavender {
+  fill: var(--orbital-lavender);
+}
+
+.orbital-graphic__network {
+  animation: orbital-graphic-float 9s ease-in-out infinite alternate;
+}
+
+.orbital-graphic:not(.is-orbital-active) .orbital-graphic__halo,
+.orbital-graphic:not(.is-orbital-active) .orbital-graphic__scan,
+.orbital-graphic:not(.is-orbital-active) .orbital-graphic__rings,
+.orbital-graphic:not(.is-orbital-active) .orbital-graphic__particles,
+.orbital-graphic:not(.is-orbital-active) .orbital-graphic__particle,
+.orbital-graphic:not(.is-orbital-active) .orbital-graphic__network {
+  animation-play-state: paused;
+}
+
+.orbital-graphic__connector {
+  stroke: var(--orbital-mist);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-opacity: 0.22;
+}
+
+.orbital-graphic__connector--accent {
+  stroke: var(--orbital-lavender);
+  stroke-opacity: 0.28;
+}
+
+.orbital-graphic__node {
+  fill: var(--orbital-teal);
+  stroke: var(--orbital-abyss);
+  stroke-width: 2;
+}
+
+.orbital-graphic__node--mist {
+  fill: var(--orbital-mist);
+}
+
+.orbital-graphic__node--lavender {
+  fill: var(--orbital-lavender);
+}
+
+@keyframes orbital-graphic-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes orbital-graphic-spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes orbital-graphic-drift {
+  0% {
+    transform: rotate(-3deg) scale(0.985);
+  }
+
+  100% {
+    transform: rotate(4deg) scale(1.015);
+  }
+}
+
+@keyframes orbital-graphic-pulse {
+  0%,
+  100% {
+    transform: scale(0.72);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
+}
+
+@keyframes orbital-graphic-float {
+  0% {
+    transform: translate3d(-4px, 3px, 0) rotate(-1deg);
+  }
+
+  100% {
+    transform: translate3d(5px, -4px, 0) rotate(1.5deg);
+  }
+}
+
+@keyframes orbital-graphic-breathe {
+  0%,
+  100% {
+    opacity: 0.62;
+    transform: scale(0.96);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+@keyframes orbital-graphic-scan {
+  from {
+    transform: translateY(-46%);
+  }
+
+  to {
+    transform: translateY(46%);
+  }
+}
+
+@media (max-width: 48rem) {
+  .orbital-graphic {
+    width: clamp(16rem, 88vw, 30rem);
+  }
+
+  .orbital-graphic__ring {
+    stroke-width: 1.6;
+  }
+
+  .orbital-graphic__connector {
+    stroke-width: 1.25;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orbital-graphic__rings,
+  .orbital-graphic__halo,
+  .orbital-graphic__scan,
+  .orbital-graphic__particles,
+  .orbital-graphic__particle,
+  .orbital-graphic__network {
+    animation: none;
+  }
+}

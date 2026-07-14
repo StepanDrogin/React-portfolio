@@ -1,29 +1,25 @@
 {
   "name": "react-portfolio",
   "version": "0.1.0",
-  "homepage": "https://stepandrogin.github.io/react-portfolio",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
-    "ityped": "^1.0.3",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
-    "react-burger-menu": "^3.0.6",
     "react-dom": "^17.0.2",
-    "react-router": "^5.2.1",
-    "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "postbuild": "npm run verify:seo && npm run verify:deploy",
+    "check:deploy": "npm test -- --watchAll=false && npm run build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "verify:deploy": "node scripts/verify-deploy.cjs",
+    "verify:seo": "node scripts/verify-seo.cjs"
   },
   "eslintConfig": {
     "extends": [
@@ -43,7 +39,8 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "gh-pages": "^5.0.0"
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
   }
 }

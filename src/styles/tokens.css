@@ -1,0 +1,138 @@
+:root {
+  /* Colors */
+  --color-liquid-abyss: #012624;
+  --color-liquid-deep: #011d1c;
+  --color-liquid-kelp: #003734;
+  --color-liquid-mist: #edfffe;
+  --color-platinum: #ffffff;
+  --color-silver-mist: #bbc7c6;
+  --color-ash: #f2f2f2;
+  --color-slate-deep: #707777;
+  --color-lavender-phosphor: #fde9ff;
+  --color-bioluminescent-gradient: #00827c;
+  --color-aurora-gradient: #cbfffc;
+
+  /* Gradients */
+  --gradient-bioluminescent-gradient: linear-gradient(
+    90deg,
+    rgb(0, 130, 124) 0%,
+    rgb(203, 255, 252) 100%
+  );
+  --gradient-aurora-gradient: linear-gradient(
+    90deg,
+    rgb(203, 255, 252) 0%,
+    rgb(237, 255, 254) 26.25%,
+    rgb(255, 253, 250) 47.57%,
+    rgb(250, 209, 255) 88.96%
+  );
+  --gradient-background: linear-gradient(
+    180deg,
+    var(--color-liquid-abyss) 0%,
+    var(--color-liquid-deep) 100%
+  );
+
+  /* Font families */
+  --font-matter: "Inter", ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-arial: Arial, ui-sans-serif, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Type scale */
+  --text-caption: 10px;
+  --leading-caption: 1.4;
+  --tracking-caption: 1.5px;
+  --text-body: 16px;
+  --leading-body: 1.4;
+  --text-subheading: 24px;
+  --leading-subheading: 1.3;
+  --tracking-subheading: -0.48px;
+  --text-heading: 36px;
+  --leading-heading: 1;
+  --text-heading-lg: 61px;
+  --leading-heading-lg: 1;
+  --tracking-heading-lg: -2.44px;
+  --text-display: 96px;
+  --leading-display: 1;
+  --tracking-display: -3.84px;
+
+  /* Fluid type scale */
+  --text-fluid-subheading: clamp(
+    1.25rem,
+    calc(1.08rem + 0.75vw),
+    1.5rem
+  );
+  --text-fluid-heading: clamp(2rem, calc(1.83rem + 0.75vw), 2.25rem);
+  --text-fluid-heading-lg: clamp(
+    2.5rem,
+    calc(1.63rem + 3.75vw),
+    3.8125rem
+  );
+  --text-fluid-display: clamp(3.8125rem, calc(1.48rem + 10vw), 6rem);
+
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+
+  /* Spacing */
+  --spacing-unit: 4px;
+  --spacing-12: 12px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-28: 28px;
+  --spacing-32: 32px;
+  --spacing-36: 36px;
+  --spacing-40: 40px;
+  --spacing-48: 48px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --spacing-120: 120px;
+  --spacing-140: 140px;
+  --spacing-160: 160px;
+  --spacing-164: 164px;
+
+  /* Layout */
+  --page-max-width: 1440px;
+  --container-gutter-small: var(--spacing-20);
+  --container-gutter-medium: var(--spacing-32);
+  --container-gutter-large: var(--spacing-64);
+  --container-gutter: clamp(
+    var(--container-gutter-small),
+    4vw,
+    var(--container-gutter-large)
+  );
+  --section-gap: 68px;
+  --card-padding-block: var(--spacing-48);
+  --card-padding-inline: var(--spacing-36);
+  --card-padding: var(--card-padding-block) var(--card-padding-inline);
+  --element-gap: var(--spacing-20);
+
+  /* Motion */
+  --motion-duration-fast: 160ms;
+  --motion-duration-base: 320ms;
+  --motion-duration-slow: 520ms;
+  --motion-duration-reveal: 820ms;
+  --motion-duration-ambient: 14s;
+  --motion-ease-standard: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --motion-ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --motion-ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --motion-reveal-distance: 44px;
+  --motion-stagger-step: 80ms;
+  --scroll-progress: 0;
+  --pointer-x: 50vw;
+  --pointer-y: 50vh;
+
+  /* Shape vocabulary: only 6px and 16px */
+  --radius-small: 6px;
+  --radius-cards: 16px;
+  --radius-buttons: var(--radius-small);
+  --radius-md: var(--radius-small);
+  --radius-xl: var(--radius-cards);
+  --radius-2xl: var(--radius-cards);
+
+  /* Surfaces */
+  --surface-liquid-abyss: var(--color-liquid-abyss);
+  --surface-liquid-deep: var(--color-liquid-deep);
+  --surface-liquid-kelp: var(--color-liquid-kelp);
+  --surface-slate-deep: var(--color-slate-deep);
+}

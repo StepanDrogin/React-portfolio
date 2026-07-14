@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Знак портфолио Степана Дрогина</title>
+  <defs>
+    <linearGradient id="mark" x1="112" y1="96" x2="412" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBFFFC" />
+      <stop offset="0.52" stop-color="#62E3DC" />
+      <stop offset="1" stop-color="#B7A7FF" />
+    </linearGradient>
+    <radialGradient id="surface" cx="0" cy="0" r="1" gradientTransform="translate(256 226) rotate(90) scale(310)">
+      <stop stop-color="#006C67" />
+      <stop offset="0.62" stop-color="#003734" />
+      <stop offset="1" stop-color="#012624" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" rx="116" fill="url(#surface)" />
+  <circle cx="256" cy="256" r="145" fill="none" stroke="url(#mark)" stroke-width="28" />
+  <circle cx="256" cy="256" r="72" fill="#012624" stroke="#CBFFFC" stroke-opacity="0.42" stroke-width="12" />
+  <path d="M256 195 317 256 256 317 195 256Z" fill="url(#mark)" />
+  <circle cx="256" cy="111" r="16" fill="#CBFFFC" />
+  <circle cx="401" cy="256" r="16" fill="#AFA1FF" />
+  <circle cx="256" cy="401" r="16" fill="#62E3DC" />
+  <circle cx="111" cy="256" r="16" fill="#CBFFFC" />
+</svg>

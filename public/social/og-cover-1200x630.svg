@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="86" y1="14" x2="1120" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003F3B" />
+      <stop offset="0.56" stop-color="#012C2A" />
+      <stop offset="1" stop-color="#011F1E" />
+    </linearGradient>
+    <linearGradient id="accent" x1="720" y1="106" x2="1080" y2="540" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBFFFC" />
+      <stop offset="0.5" stop-color="#62E3DC" />
+      <stop offset="1" stop-color="#B7A7FF" />
+    </linearGradient>
+    <pattern id="grid" width="56" height="56" patternUnits="userSpaceOnUse">
+      <path d="M56 0H0V56" fill="none" stroke="#CBFFFC" stroke-opacity="0.055" />
+    </pattern>
+    <filter id="blur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="58" />
+    </filter>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+  <circle cx="978" cy="161" r="180" fill="#00827C" fill-opacity="0.22" filter="url(#blur)" />
+  <circle cx="1028" cy="493" r="150" fill="#A898FF" fill-opacity="0.16" filter="url(#blur)" />
+  <path d="M72 70H1128M72 560H1128" stroke="#CBFFFC" stroke-opacity="0.13" />
+
+  <text x="72" y="124" fill="#A9C5C3" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="5">СТЕПАН ДРОГИН</text>
+  <text x="72" y="250" fill="#F3FFFE" font-family="Inter, Arial, sans-serif" font-size="86" font-weight="500" letter-spacing="-4">Product Engineer</text>
+  <text x="72" y="322" fill="#CBFFFC" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="400">Цифровые продукты от идеи до production</text>
+  <text x="72" y="410" fill="#A9C5C3" font-family="Inter, Arial, sans-serif" font-size="23" font-weight="400">Product  ·  UX  ·  Fullstack  ·  AI  ·  Delivery</text>
+  <text x="72" y="520" fill="#CBFFFC" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="500">@stepan_dr</text>
+
+  <circle cx="958" cy="314" r="156" fill="#012624" fill-opacity="0.68" stroke="url(#accent)" stroke-width="12" />
+  <circle cx="958" cy="314" r="84" fill="#012624" stroke="#CBFFFC" stroke-opacity="0.36" stroke-width="6" />
+  <path d="M958 244 1028 314 958 384 888 314Z" fill="url(#accent)" />
+  <circle cx="958" cy="158" r="13" fill="#CBFFFC" />
+  <circle cx="1114" cy="314" r="13" fill="#AFA1FF" />
+  <circle cx="958" cy="470" r="13" fill="#62E3DC" />
+  <circle cx="802" cy="314" r="13" fill="#CBFFFC" />
+</svg>

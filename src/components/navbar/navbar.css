@@ -1,0 +1,259 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(203, 255, 252, 0.08);
+  background: rgba(1, 38, 36, 0.86);
+  backdrop-filter: blur(18px);
+  transition: background-color var(--motion-duration-base)
+      var(--motion-ease-standard),
+    border-color var(--motion-duration-base) var(--motion-ease-standard);
+}
+
+.navbar::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -1px;
+  left: 0;
+  height: 1px;
+  background: var(--gradient-aurora-gradient);
+  transform: scaleX(var(--scroll-progress));
+  transform-origin: left;
+  transition: transform 80ms linear;
+}
+
+body.has-scrolled .navbar {
+  border-color: rgba(203, 255, 252, 0.14);
+  background: rgba(1, 29, 28, 0.95);
+}
+
+.navbar__inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--spacing-36);
+}
+
+.navbar__logo {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-platinum);
+  text-decoration: none;
+}
+
+.navbar__logo-text {
+  font-size: 14px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: -0.01em;
+}
+
+.navbar__nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-28);
+}
+
+.navbar__link {
+  position: relative;
+  padding: 14px 0;
+  color: var(--color-silver-mist);
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: 0.14em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.navbar__link::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  left: 0;
+  height: 1px;
+  background: var(--color-aurora-gradient);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform var(--motion-duration-base) var(--motion-ease-out);
+}
+
+.navbar__link:hover,
+.navbar__link[aria-current="location"] {
+  color: var(--color-platinum);
+}
+
+.navbar__link:hover::after,
+.navbar__link:focus-visible::after,
+.navbar__link[aria-current="location"]::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.navbar .navbar__cta.ui-button.button {
+  min-height: 44px;
+  padding: 11px var(--spacing-20);
+  border-color: rgba(203, 255, 252, 0.22);
+  background: rgba(0, 55, 52, 0.72);
+  color: var(--color-platinum);
+}
+
+.navbar__actions {
+  display: flex;
+  align-items: center;
+  justify-self: end;
+  gap: var(--spacing-12);
+}
+
+.navbar__language-switcher {
+  display: inline-flex;
+  flex: 0 0 auto;
+  padding: 3px;
+  border: 1px solid rgba(203, 255, 252, 0.18);
+  border-radius: var(--radius-small);
+  background: rgba(0, 55, 52, 0.72);
+}
+
+.navbar__language-option {
+  min-width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--color-silver-mist);
+  font-size: 10px;
+  font-weight: var(--font-weight-medium);
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: background-color var(--motion-duration-fast)
+      var(--motion-ease-standard),
+    border-color var(--motion-duration-fast) var(--motion-ease-standard),
+    color var(--motion-duration-fast) var(--motion-ease-standard);
+}
+
+.navbar__language-option:hover:not(.navbar__language-option--active) {
+  border-color: rgba(203, 255, 252, 0.18);
+  color: var(--color-platinum);
+}
+
+.navbar__language-option--active {
+  border-color: rgba(255, 255, 255, 0.62);
+  background: var(--gradient-aurora-gradient);
+  color: var(--color-liquid-deep);
+}
+
+.navbar__nav .navbar__mobile-cta,
+.navbar__toggle {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .navbar__inner {
+    grid-template-columns: auto 1fr auto;
+    gap: var(--spacing-16);
+  }
+
+  .navbar__nav {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    left: 0;
+    min-height: calc(100svh - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    gap: var(--spacing-12);
+    padding: var(--spacing-40) var(--container-gutter) var(--spacing-64);
+    border-top: 1px solid rgba(203, 255, 252, 0.08);
+    background: var(--color-liquid-deep);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity var(--motion-duration-base) var(--motion-ease-out),
+      transform var(--motion-duration-base) var(--motion-ease-out),
+      visibility var(--motion-duration-base) var(--motion-ease-out);
+  }
+
+  .navbar__nav--open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .navbar__link {
+    min-height: 56px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(203, 255, 252, 0.1);
+    color: var(--color-platinum);
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+  }
+
+  .navbar__link::after,
+  .navbar .navbar__cta {
+    display: none;
+  }
+
+  .navbar__nav .navbar__mobile-cta {
+    width: 100%;
+    display: inline-flex;
+    margin-top: var(--spacing-24);
+  }
+
+  .navbar__toggle {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-content: center;
+    gap: 7px;
+    justify-self: end;
+    padding: 0;
+    border: 1px solid rgba(203, 255, 252, 0.18);
+    border-radius: var(--radius-small);
+    background: var(--color-liquid-kelp);
+    color: var(--color-platinum);
+    cursor: pointer;
+  }
+
+  .navbar__language-option {
+    min-width: 32px;
+    height: 32px;
+  }
+
+  .navbar__toggle-line {
+    width: 18px;
+    height: 1px;
+    display: block;
+    background: currentColor;
+    transition: transform var(--motion-duration-base) var(--motion-ease-out);
+  }
+
+  .navbar__toggle[aria-expanded="true"] .navbar__toggle-line:first-child {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .navbar__toggle[aria-expanded="true"] .navbar__toggle-line:last-child {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .navbar__nav,
+  .navbar__language-option,
+  .navbar__toggle-line,
+  .navbar__link::after,
+  .navbar::after {
+    transition: none;
+  }
+}

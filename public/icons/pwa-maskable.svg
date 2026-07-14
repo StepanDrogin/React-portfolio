@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="maskable-mark" x1="155" y1="146" x2="360" y2="367" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CBFFFC" />
+      <stop offset="0.52" stop-color="#62E3DC" />
+      <stop offset="1" stop-color="#B7A7FF" />
+    </linearGradient>
+    <radialGradient id="maskable-surface" cx="0" cy="0" r="1" gradientTransform="translate(256 236) rotate(90) scale(330)">
+      <stop stop-color="#006C67" />
+      <stop offset="0.64" stop-color="#003734" />
+      <stop offset="1" stop-color="#012624" />
+    </radialGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#maskable-surface)" />
+  <circle cx="256" cy="256" r="104" fill="none" stroke="url(#maskable-mark)" stroke-width="24" />
+  <circle cx="256" cy="256" r="52" fill="#012624" stroke="#CBFFFC" stroke-opacity="0.4" stroke-width="10" />
+  <path d="M256 213 299 256 256 299 213 256Z" fill="url(#maskable-mark)" />
+  <circle cx="256" cy="152" r="13" fill="#CBFFFC" />
+  <circle cx="360" cy="256" r="13" fill="#AFA1FF" />
+  <circle cx="256" cy="360" r="13" fill="#62E3DC" />
+  <circle cx="152" cy="256" r="13" fill="#CBFFFC" />
+</svg>

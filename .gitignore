@@ -7,9 +7,11 @@
 
 # testing
 /coverage
+/.playwright-cli
 
 # production
 /build
+/.wrangler
 
 # misc
 .DS_Store

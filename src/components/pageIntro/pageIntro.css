@@ -1,0 +1,115 @@
+.page-intro {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: grid;
+  place-items: center;
+  padding: var(--container-gutter);
+  background: var(--color-liquid-deep);
+  color: var(--color-liquid-mist);
+  transition: opacity var(--motion-duration-slow) var(--motion-ease-out),
+    visibility var(--motion-duration-slow) var(--motion-ease-out);
+}
+
+.page-intro::before,
+.page-intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.page-intro::before {
+  background-image: linear-gradient(
+      rgba(203, 255, 252, 0.045) 1px,
+      transparent 1px
+    ),
+    linear-gradient(90deg, rgba(203, 255, 252, 0.045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(circle at center, black, transparent 78%);
+}
+
+.page-intro::after {
+  background: radial-gradient(
+    circle at 50% 55%,
+    rgba(0, 130, 124, 0.28),
+    transparent 38%
+  );
+}
+
+.page-intro--leaving {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.page-intro__inner {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 680px);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: center;
+  gap: var(--spacing-24);
+}
+
+.page-intro__counter,
+.page-intro__role {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.page-intro__counter {
+  color: var(--color-silver-mist);
+}
+
+.page-intro__role {
+  justify-self: end;
+  text-align: right;
+}
+
+.page-intro__track {
+  position: absolute;
+  right: var(--container-gutter);
+  bottom: var(--spacing-32);
+  left: var(--container-gutter);
+  height: 1px;
+  background: rgba(203, 255, 252, 0.12);
+  overflow: hidden;
+}
+
+.page-intro__progress {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: var(--gradient-aurora-gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: intro-progress 760ms var(--motion-ease-out) forwards;
+}
+
+@keyframes intro-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@media (max-width: 640px) {
+  .page-intro__inner {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .page-intro__counter,
+  .page-intro__role {
+    justify-self: center;
+    text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-intro {
+    display: none;
+  }
+}

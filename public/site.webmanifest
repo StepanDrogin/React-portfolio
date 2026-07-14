@@ -1,0 +1,58 @@
+{
+  "id": "/",
+  "name": "Степан Дрогин — Product Engineer",
+  "short_name": "Степан Дрогин",
+  "description": "Цифровые продукты полного цикла: Product, UX, Fullstack, AI и Delivery.",
+  "lang": "ru-RU",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "orientation": "any",
+  "theme_color": "#012624",
+  "background_color": "#012624",
+  "categories": ["business", "productivity", "developer"],
+  "icons": [
+    {
+      "src": "/icons/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/pwa-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icons/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/portfolio-wide.jpg",
+      "sizes": "1265x712",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "Главный экран портфолио Степана Дрогина"
+    },
+    {
+      "src": "/screenshots/portfolio-mobile.jpg",
+      "sizes": "375x811",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "Мобильная версия портфолио Степана Дрогина"
+    }
+  ]
+}

@@ -1,46 +1,241 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" prefix="og: https://ogp.me/ns#">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Степан Дрогин — Product Engineer | Web, AI, UX</title>
     <meta
       name="description"
-      content="Portfolio web-app by Stepan"
+      content="Проектирую и запускаю цифровые продукты полного цикла: UX/UI, frontend, backend, AI, инфраструктура и production. Более 6 лет коммерческого опыта."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta name="author" content="Степан Дрогин" />
+    <meta name="application-name" content="Степан Дрогин" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta
+      name="googlebot"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Portfolio Drogin</title>
+    <link
+      rel="canonical"
+      href="https://stepandrogin.pages.dev/"
+    />
+    <link
+      rel="alternate"
+      hreflang="ru-RU"
+      href="https://stepandrogin.pages.dev/"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://stepandrogin.pages.dev/"
+    />
+    <link rel="me" href="https://t.me/stepan_dr" />
+    <link
+      rel="image_src"
+      href="https://stepandrogin.pages.dev/social/og-cover-1200x630.png"
+    />
+
+    <link
+      rel="icon"
+      href="%PUBLIC_URL%/favicon.svg"
+      type="image/svg+xml"
+      sizes="any"
+    />
+    <link
+      rel="icon"
+      href="%PUBLIC_URL%/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16 32x32 48x48 64x64"
+    />
+    <link
+      rel="icon"
+      href="%PUBLIC_URL%/favicon-48x48.png"
+      type="image/png"
+      sizes="48x48"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="%PUBLIC_URL%/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="mask-icon"
+      href="%PUBLIC_URL%/safari-pinned-tab.svg"
+      color="#00827c"
+    />
+    <link rel="manifest" href="%PUBLIC_URL%/site.webmanifest" />
+
+    <meta name="theme-color" content="#012624" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Степан Дрогин" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta name="msapplication-TileColor" content="#012624" />
+    <meta
+      name="msapplication-config"
+      content="%PUBLIC_URL%/browserconfig.xml"
+    />
+
+    <meta
+      property="og:title"
+      content="Степан Дрогин — Product Engineer полного цикла"
+    />
+    <meta
+      property="og:description"
+      content="Проектирую и запускаю цифровые продукты: от идеи и UX до frontend, backend, AI, инфраструктуры и production."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://stepandrogin.pages.dev/"
+    />
+    <meta property="og:site_name" content="Степан Дрогин" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:image"
+      content="https://stepandrogin.pages.dev/social/og-cover-1200x630.png"
+    />
+    <meta
+      property="og:image:secure_url"
+      content="https://stepandrogin.pages.dev/social/og-cover-1200x630.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Степан Дрогин — Product Engineer: Product, UX, Fullstack, AI и Delivery"
+    />
+    <meta
+      property="og:image"
+      content="https://stepandrogin.pages.dev/social/og-cover-square-1200x1200.png"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="1200" />
+    <meta
+      property="og:image:alt"
+      content="Степан Дрогин — Product Engineer"
+    />
+    <meta
+      property="vk:image"
+      content="https://stepandrogin.pages.dev/social/og-cover-1200x630.png"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Степан Дрогин — Product Engineer полного цикла"
+    />
+    <meta
+      name="twitter:description"
+      content="Цифровые продукты от идеи и UX до frontend, backend, AI, инфраструктуры и production."
+    />
+    <meta
+      name="twitter:image"
+      content="https://stepandrogin.pages.dev/social/og-cover-1200x630.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Степан Дрогин — Product Engineer: Product, UX, Fullstack, AI и Delivery"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "ProfilePage",
+            "@id": "https://stepandrogin.pages.dev/#profile",
+            "url": "https://stepandrogin.pages.dev/",
+            "name": "Степан Дрогин — Product Engineer",
+            "description": "Персональный сайт Product Engineer, создающего цифровые продукты полного цикла: UX/UI, frontend, backend, AI, инфраструктура и production.",
+            "inLanguage": "ru-RU",
+            "dateModified": "2026-07-14",
+            "mainEntity": {
+              "@id": "https://stepandrogin.pages.dev/#person"
+            },
+            "isPartOf": {
+              "@id": "https://stepandrogin.pages.dev/#website"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://stepandrogin.pages.dev/#person",
+            "name": "Степан Дрогин",
+            "alternateName": "@stepan_dr",
+            "jobTitle": "Fullstack / Product Engineer",
+            "description": "Проектирует и запускает цифровые продукты от discovery и UX до frontend, backend, AI, инфраструктуры и production.",
+            "url": "https://stepandrogin.pages.dev/",
+            "email": "mailto:drogenko.stepan@yandex.ru",
+            "telephone": "+79034418338",
+            "sameAs": ["https://t.me/stepan_dr"],
+            "knowsAbout": [
+              "Product discovery",
+              "UX/UI",
+              "Design systems",
+              "Frontend development",
+              "Backend development",
+              "Artificial intelligence",
+              "DevOps",
+              "Software delivery"
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://stepandrogin.pages.dev/#website",
+            "url": "https://stepandrogin.pages.dev/",
+            "name": "Степан Дрогин",
+            "alternateName": "Stepan Drogin — Product Engineer",
+            "description": "Разработка цифровых продуктов полного цикла: Product, UX, Fullstack, AI и Delivery.",
+            "inLanguage": "ru-RU",
+            "publisher": {
+              "@id": "https://stepandrogin.pages.dev/#person"
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <main>
+        <h1>Степан Дрогин — Product Engineer</h1>
+        <p>
+          Проектирую и запускаю цифровые продукты полного цикла: UX/UI,
+          frontend, backend, AI, инфраструктура и production.
+        </p>
+        <p>Более 6 лет коммерческого опыта.</p>
+        <p>
+          <a href="https://t.me/stepan_dr">Telegram: @stepan_dr</a><br />
+          <a href="https://wa.me/79034418338">WhatsApp: +7 903 441-83-38</a
+          ><br />
+          <a href="tel:+79034418338">Телефон: 8 903 441-83-38</a><br />
+          <a href="mailto:drogenko.stepan@yandex.ru"
+            >Email: drogenko.stepan@yandex.ru</a
+          >
+        </p>
+      </main>
+    </noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
