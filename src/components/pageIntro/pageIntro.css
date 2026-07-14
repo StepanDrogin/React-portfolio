@@ -85,7 +85,7 @@
   background: var(--gradient-aurora-gradient);
   transform: scaleX(0);
   transform-origin: left;
-  animation: intro-progress 760ms var(--motion-ease-out) forwards;
+  animation: intro-progress 360ms var(--motion-ease-out) forwards;
 }
 
 @keyframes intro-progress {

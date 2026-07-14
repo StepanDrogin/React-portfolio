@@ -104,6 +104,15 @@ svg {
   scroll-margin-top: 80px;
 }
 
+.services-section,
+.ai-section,
+.stack-section,
+.process-section,
+.app > footer {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}
+
 .eyebrow {
   color: var(--color-liquid-mist);
   font-size: 11px;

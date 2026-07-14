@@ -27,22 +27,18 @@ export default function useMotionSystem() {
 
     const markVisible = (node) => node.classList.add("is-visible");
 
-    const revealPassedNodes = () => {
+    const getPassedRevealNodes = () => {
       if (prefersReducedMotion.matches) {
-        return;
+        return [];
       }
 
       const revealLine = window.innerHeight * 0.9;
 
-      revealNodes.forEach((node) => {
-        if (
+      return revealNodes.filter(
+        (node) =>
           !node.classList.contains("is-visible") &&
           node.getBoundingClientRect().top <= revealLine
-        ) {
-          markVisible(node);
-          revealObserver?.unobserve(node);
-        }
-      });
+      );
     };
 
     if (!prefersReducedMotion.matches && hasIntersectionObserver) {
@@ -150,35 +146,51 @@ export default function useMotionSystem() {
         1
       );
       const progress = Math.min(Math.max(window.scrollY / availableScroll, 0), 1);
+      const shiftRange = window.innerWidth <= 640
+        ? Math.min(18, window.innerWidth * 0.045)
+        : Math.min(72, window.innerWidth * 0.06);
+      const scrollShiftValues = !prefersReducedMotion.matches
+        ? scrollShiftNodes.map((node) => {
+            const bounds = node.getBoundingClientRect();
+            const localProgress = Math.min(
+              Math.max(
+                (window.innerHeight - bounds.top) /
+                  (window.innerHeight + bounds.height),
+                0
+              ),
+              1
+            );
+            const direction = Number(node.dataset.scrollShift) || 1;
+
+            return {
+              node,
+              gradientPosition: `${(localProgress * 100).toFixed(2)}%`,
+              shift: `${(
+                (localProgress - 0.5) *
+                direction *
+                shiftRange
+              ).toFixed(2)}px`,
+            };
+          })
+        : [];
+      const passedRevealNodes = getPassedRevealNodes();
 
       root.style.setProperty("--scroll-progress", progress.toFixed(4));
       body.classList.toggle("has-scrolled", window.scrollY > 24);
 
       if (!prefersReducedMotion.matches) {
-        scrollShiftNodes.forEach((node) => {
-          const bounds = node.getBoundingClientRect();
-          const localProgress = Math.min(
-            Math.max(
-              (window.innerHeight - bounds.top) /
-                (window.innerHeight + bounds.height),
-              0
-            ),
-            1
-          );
-          const direction = Number(node.dataset.scrollShift) || 1;
-          const shiftRange = window.innerWidth <= 640
-            ? Math.min(18, window.innerWidth * 0.045)
-            : Math.min(72, window.innerWidth * 0.06);
-          const shift = (localProgress - 0.5) * direction * shiftRange;
-
-          node.style.setProperty("--scroll-shift", `${shift.toFixed(2)}px`);
+        scrollShiftValues.forEach(({ node, gradientPosition, shift }) => {
+          node.style.setProperty("--scroll-shift", shift);
           node.style.setProperty(
             "--scroll-gradient-position",
-            `${(localProgress * 100).toFixed(2)}%`
+            gradientPosition
           );
         });
 
-        revealPassedNodes();
+        passedRevealNodes.forEach((node) => {
+          markVisible(node);
+          revealObserver?.unobserve(node);
+        });
       }
 
       scrollFrame = 0;
@@ -224,7 +236,7 @@ export default function useMotionSystem() {
     updateScrollState();
     const enterTimer = window.setTimeout(() => {
       body.classList.add("page-entered");
-    }, prefersReducedMotion.matches ? 0 : 520);
+    }, prefersReducedMotion.matches ? 0 : 40);
 
     return () => {
       revealObserver?.disconnect();

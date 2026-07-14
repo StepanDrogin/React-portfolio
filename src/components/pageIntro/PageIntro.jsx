@@ -14,8 +14,8 @@ export default function PageIntro() {
       return undefined;
     }
 
-    const leaveTimer = window.setTimeout(() => setPhase("leaving"), 720);
-    const hideTimer = window.setTimeout(() => setPhase("hidden"), 1220);
+    const leaveTimer = window.setTimeout(() => setPhase("leaving"), 280);
+    const hideTimer = window.setTimeout(() => setPhase("hidden"), 800);
 
     return () => {
       window.clearTimeout(leaveTimer);
